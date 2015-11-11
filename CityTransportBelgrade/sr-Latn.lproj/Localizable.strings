@@ -1,0 +1,47 @@
+/* 
+  Localizable.strings
+  CityTransportBelgrade
+
+  Created by Vladislav Jevremovic on 8/28/12.
+  Copyright (c) 2012 Vladislav Jevremovic. All rights reserved.
+*/
+
+"okTitle" = "OK";
+"infoTitle" = "Info";
+"errorTitle" = "Greška";
+
+"tbMapTitle" = "Mapa";
+"tbFavoritesTitle" = "Omiljene";
+"tbStopsTitle" = "Stanice";
+"tbLinesTitle" = "Linije";
+"tbTimetableTitle" = "Polasci";
+
+"vcInformationTitle" = "Informacije";
+"vcStopTitle" = "Stanica";
+"vcLineTitle" = "Linija";
+"vcLiveViewTitle" = "Prikaz uživo";
+
+"errorMaximumNumberOfFavoritesReachedText" = "Dostignut maksimum broja omiljenih stanica.";
+"errorRegionNotSupportedText" = "Oblast nije podržana!";
+"errorDepartureFetchFailedText" = "Preuzimanje polazaka neuspelo!";
+"errorVehiclePositionsUnavailableText" = "Lokacije vozila su nedostupne!";
+"errorVehiclePositionsUnavailableLongText" = "Nažalost, ova aplikacija nema pristup podacima o lokacijama vozila javnog prevoza u realnom vremenu.\n\nOvi podaci trenutno nisu dostupni trećim stranama.\n\nOvakvu funkcionalnost mogu pružiti samo zvanične institucije.";
+
+"searchStopsPlaceholderText" = "Unesite broj stanice";
+"searchLinesPlaceholderText" = "Unesite broj linije";
+"infoUSSDText" = "Upišite/nalepite dati broj u Phone aplikaciju za dobijanje udaljenosti dolazećih vozila.\n(Aplikacije ne smeju same pozivati USSD brojeve.)\n\n Podatke dostavlja i naplaćuje (1.8 RSD) spoljni sistem sa kojim autor ove aplikacije nije ni na koji način povezan.";
+"clusterAnnotationStopsFormatText" = "Broj stanica: %tu";
+
+// Info
+"settingsText" = "Podešavanja";
+"mapStyleText" = "Mapa";
+"mapStyleStandardText" = "Standardna";
+"mapStyleSatelliteText" = "Satelit";
+"mapStyleHybridText" = "Hibridna";
+"versionText" = "Verzija";
+"authorText" = "Autor";
+"artworkText" = "Dizajn";
+"aboutText" = "O aplikaciji";
+"acknowledgementsText" = "Zahvalnice";
+"acknowledgementsLabelText" = "Komponente trećih strana";
+"otherAppsText" = "Ostale aplikacije";

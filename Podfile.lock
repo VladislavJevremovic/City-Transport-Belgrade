@@ -1,0 +1,16 @@
+PODS:
+  - CCHMapClusterController (1.6.6)
+  - MBPullDownController (1.1.1)
+  - YRDropdownView (0.0.1)
+
+DEPENDENCIES:
+  - CCHMapClusterController (~> 1.6)
+  - MBPullDownController (~> 1.1)
+  - YRDropdownView (~> 0.0)
+
+SPEC CHECKSUMS:
+  CCHMapClusterController: 982db41114b42a575798366371bd9908e0f9ec8b
+  MBPullDownController: 6e5ee6fa099f2283cc207b3d2fa5c4867c652258
+  YRDropdownView: f1263e6c25736b58cdb2cebb50dd79819e3127e2
+
+COCOAPODS: 0.39.0

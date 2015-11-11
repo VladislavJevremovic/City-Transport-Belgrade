@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+CFBundleName = "Gradski Prevoz Beograd";
+CFBundleDisplayName = "Prevoz";
+NSLocationWhenInUseUsageDescription = "Ovoj aplikaciji je neophodna trenutna lokacija da bi prikazala obližnje podatke o prevozu.";

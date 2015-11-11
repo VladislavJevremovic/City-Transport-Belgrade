@@ -1,0 +1,47 @@
+/* 
+  Localizable.strings
+  CityTransportBelgrade
+
+  Created by Vladislav Jevremovic on 8/28/12.
+  Copyright (c) 2012 Vladislav Jevremovic. All rights reserved.
+*/
+
+"okTitle" = "OK";
+"infoTitle" = "Info";
+"errorTitle" = "Error";
+
+"tbMapTitle" = "Map";
+"tbFavoritesTitle" = "Favorites";
+"tbStopsTitle" = "Stops";
+"tbLinesTitle" = "Lines";
+"tbTimetableTitle" = "Departures";
+
+"vcInformationTitle" = "Information";
+"vcStopTitle" = "Stop";
+"vcLineTitle" = "Line";
+"vcLiveViewTitle" = "Live View";
+
+"errorMaximumNumberOfFavoritesReachedText" = "Maximum number of favorite stops reached.";
+"errorRegionNotSupportedText" = "Region not supported!";
+"errorDepartureFetchFailedText" = "Departure fetch failed!";
+"errorVehiclePositionsUnavailableText" = "Vehicle locations are unavailable!";
+"errorVehiclePositionsUnavailableLongText" = "Unfortunately, this application does not have access to realtime public transport vehicle location data.\n\nThat data is currently not available to third-party developers.\n\nSuch a feature can only be provided by official institutions.";
+
+"searchStopsPlaceholderText" = "Enter stop number";
+"searchLinesPlaceholderText" = "Enter line number";
+"infoUSSDText" = "Type/paste the given code into Phone app to acquire the distance of incoming vehicles.\n(Apps must not dial USSD codes on their own.)\n\nData is provided and charged (1.8 RSD) by an external system to which the author of this app is by no means affiliated.";
+"clusterAnnotationStopsFormatText" = "Number of stops: %tu";
+
+// Info
+"settingsText" = "Settings";
+"mapStyleText" = "Map";
+"mapStyleStandardText" = "Standard";
+"mapStyleSatelliteText" = "Satellite";
+"mapStyleHybridText" = "Hybrid";
+"versionText" = "Version";
+"authorText" = "Author";
+"artworkText" = "Design";
+"aboutText" = "About";
+"acknowledgementsText" = "Acknowledgements";
+"acknowledgementsLabelText" = "Third Party Components";
+"otherAppsText" = "Other Apps";

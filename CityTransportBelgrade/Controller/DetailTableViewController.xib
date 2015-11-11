@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment version="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailTableViewController">
+            <connections>
+                <outlet property="buttonFavorite" destination="h2V-r1-XZh" id="OVi-yf-ICX"/>
+                <outlet property="headerView" destination="CO7-eP-lUh" id="zLq-fY-zYe"/>
+                <outlet property="imageView" destination="Iln-fv-oKg" id="xS6-Uj-0Mz"/>
+                <outlet property="label" destination="33o-IK-aUc" id="Dkj-sH-9Da"/>
+                <outlet property="view" destination="zcl-kl-D0n" id="j9O-VJ-7PR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zcl-kl-D0n">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <view key="tableHeaderView" contentMode="scaleToFill" id="CO7-eP-lUh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5h-Wf-I7R">
+                        <rect key="frame" x="0.0" y="55" width="320" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.82989875637755106" green="0.82989875637755106" blue="0.82989875637755106" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mYZ-rV-DYU"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iln-fv-oKg">
+                        <rect key="frame" x="15" y="6" width="44" height="44"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="BZU-lW-DIk"/>
+                            <constraint firstAttribute="height" constant="44" id="tbv-zf-oAc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="198" translatesAutoresizingMaskIntoConstraints="NO" id="33o-IK-aUc">
+                        <rect key="frame" x="74" y="6" width="198" height="44"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2V-r1-XZh">
+                        <rect key="frame" x="280" y="13" width="30" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="LTt-4M-C4g"/>
+                            <constraint firstAttribute="height" constant="30" id="xBz-Km-MT3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" image="Star">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="tappedButtonFavorite:" destination="-1" eventType="touchUpInside" id="bWS-9b-WMI"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" red="0.9714006696428571" green="0.9714006696428571" blue="0.9714006696428571" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="Iln-fv-oKg" firstAttribute="height" secondItem="33o-IK-aUc" secondAttribute="height" id="2Q3-5G-AcS"/>
+                    <constraint firstAttribute="bottom" secondItem="Iln-fv-oKg" secondAttribute="bottom" constant="6" id="Dvy-2J-nCk"/>
+                    <constraint firstItem="Iln-fv-oKg" firstAttribute="centerY" secondItem="33o-IK-aUc" secondAttribute="centerY" id="He9-pz-Ahk"/>
+                    <constraint firstItem="Iln-fv-oKg" firstAttribute="top" secondItem="CO7-eP-lUh" secondAttribute="top" constant="6" id="Kdc-U1-1ZV"/>
+                    <constraint firstAttribute="bottom" secondItem="M5h-Wf-I7R" secondAttribute="bottom" id="TaQ-aj-KWO"/>
+                    <constraint firstItem="Iln-fv-oKg" firstAttribute="leading" secondItem="CO7-eP-lUh" secondAttribute="leading" constant="15" id="YQB-Np-7JY"/>
+                    <constraint firstAttribute="trailing" secondItem="h2V-r1-XZh" secondAttribute="trailing" constant="10" id="Zps-Hp-01m"/>
+                    <constraint firstItem="h2V-r1-XZh" firstAttribute="centerY" secondItem="Iln-fv-oKg" secondAttribute="centerY" id="bFO-B4-mjy"/>
+                    <constraint firstAttribute="trailing" secondItem="M5h-Wf-I7R" secondAttribute="trailing" id="dir-4O-YhU"/>
+                    <constraint firstItem="33o-IK-aUc" firstAttribute="leading" secondItem="Iln-fv-oKg" secondAttribute="trailing" constant="15" id="ehF-Zn-7uH"/>
+                    <constraint firstItem="M5h-Wf-I7R" firstAttribute="leading" secondItem="CO7-eP-lUh" secondAttribute="leading" id="jzB-dB-FkU"/>
+                    <constraint firstItem="h2V-r1-XZh" firstAttribute="leading" secondItem="33o-IK-aUc" secondAttribute="trailing" constant="8" id="kKu-4p-i9G"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="O2p-4N-F3L"/>
+                <outlet property="delegate" destination="-1" id="6rZ-YR-cNh"/>
+            </connections>
+        </tableView>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="p4X-8t-1bM">
+            <rect key="frame" x="0.0" y="0.0" width="73" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <animations/>
+            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+            <state key="normal" title="Button">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+        </button>
+    </objects>
+    <resources>
+        <image name="Star" width="30" height="30"/>
+    </resources>
+</document>
