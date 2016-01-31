@@ -13,11 +13,12 @@
 #import "LocationAnnotation.h"
 #import "GSPStop.h"
 #import "DetailViewController.h"
-#import "YRDropdownView.h"
 
 #import "CCHMapClusterController.h"
 #import "CCHMapClusterControllerDelegate.h"
 #import "ClusterAnnotationView.h"
+
+#import "Belgrade_City_Transport-Swift.h"
 
 float const kDropDownHideTime = 2.5;
 double const kZoomLevel = 1000.0;
@@ -161,26 +162,22 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
         return;
     }
 
-    [YRDropdownView hideDropdownInView:_mapView animated:NO];
+    UIColor *whisperBackgroundColor = nil;
+    if (isError) {
+        whisperBackgroundColor = [UIColor colorWithRed:1.0f green:59.0f / 255.0f blue:48.0f / 255.0f alpha:0.7f];
+    } else {
+        whisperBackgroundColor = [UIColor colorWithRed:0.0f green:122.0f / 255.0f blue:1.0f alpha:0.7f];
+    }
 
-    YRDropdownView *dv = [YRDropdownView showDropdownInView:_mapView
-                                                      title:text
-                                                     detail:nil
-                                                      image:nil
-                                            backgroundImage:nil
-                                            titleLabelColor:[UIColor whiteColor]
-                                           detailLabelColor:[UIColor whiteColor]
-                                                   animated:YES
-                                                  hideAfter:kDropDownHideTime];
-//    if (isError) {
-//        dv.backgroundColor = [UIColor colorWithRed:1.0f green:59.0f / 255.0f blue:48.0f / 255.0f alpha:0.7f];
-//    } else {
-//        dv.backgroundColor = [UIColor colorWithRed:0.0f green:122.0f / 255.0f blue:1.0f alpha:0.7f];
-//    }
+    [WhisperBridge whisper:text
+                 textColor:[UIColor whiteColor]
+           backgroundColor:whisperBackgroundColor
+    toNavigationController:self.navigationController];
 }
 
 - (void)hideInfoLabel {
-    [YRDropdownView hideDropdownInView:_mapView animated:YES];
+    [WhisperBridge silent:self.navigationController
+             silenceAfter:kDropDownHideTime];
 }
 
 - (IBAction)tappedLocateMe:(id)sender {
