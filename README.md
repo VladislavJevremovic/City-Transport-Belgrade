@@ -1,5 +1,5 @@
-# City Transport Belgrade
-Source for my City Transport Belgrade iOS App
+# Belgrade City Transport
+Source for my Belgrade City Transport iOS App
 
 To build and run, you need CocoaPods setup:
 

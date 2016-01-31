@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+CFBundleName = "Belgrade City Transport";
+CFBundleDisplayName = "Transport";
+NSLocationWhenInUseUsageDescription = "This app needs current location to display nearby transport data.";
