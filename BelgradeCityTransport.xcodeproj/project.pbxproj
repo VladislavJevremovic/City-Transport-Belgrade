@@ -54,6 +54,7 @@
 		86E266FF191C18F4000A5D58 /* MKMapView+Zoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E266FE191C18F4000A5D58 /* MKMapView+Zoom.m */; };
 		86EC1EBD184B3423003B4A56 /* DataModel.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 86EC1EBC184B3423003B4A56 /* DataModel.sqlite */; };
 		86FF98AD1C5E8371008FF3D7 /* WhisperBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF98AC1C5E8371008FF3D7 /* WhisperBridge.swift */; };
+		86FF98B01C5E8AEF008FF3D7 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FF98AF1C5E8AEF008FF3D7 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +136,7 @@
 		86EC1EBC184B3423003B4A56 /* DataModel.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DataModel.sqlite; sourceTree = "<group>"; };
 		86FF98AB1C5E8371008FF3D7 /* Belgrade_City_Transport-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Belgrade_City_Transport-Bridging-Header.h"; sourceTree = "<group>"; };
 		86FF98AC1C5E8371008FF3D7 /* WhisperBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhisperBridge.swift; sourceTree = "<group>"; };
+		86FF98AF1C5E8AEF008FF3D7 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		B8D14D5100693E5E18AB5743 /* Pods-Belgrade City Transport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Belgrade City Transport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport.debug.xcconfig"; sourceTree = "<group>"; };
 		D15D3F4DDA16768F61ED5F28 /* Pods-Belgrade City Transport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Belgrade City Transport.release.xcconfig"; path = "Pods/Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +148,7 @@
 			files = (
 				86C26E981AC28CC90054551E /* CoreImage.framework in Frameworks */,
 				86C26E951AC28CBF0054551E /* QuartzCore.framework in Frameworks */,
+				86FF98B01C5E8AEF008FF3D7 /* Crashlytics.framework in Frameworks */,
 				8693E3C318F0142500E2050E /* MapKit.framework in Frameworks */,
 				86512671181AD9CB002E3F04 /* CoreGraphics.framework in Frameworks */,
 				86512673181AD9CB002E3F04 /* UIKit.framework in Frameworks */,
@@ -178,6 +181,7 @@
 		8651266D181AD9CB002E3F04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86FF98AF1C5E8AEF008FF3D7 /* Crashlytics.framework */,
 				86C26E971AC28CC90054551E /* CoreImage.framework */,
 				86C26E941AC28CBF0054551E /* QuartzCore.framework */,
 				8693E3C218F0142500E2050E /* MapKit.framework */,
@@ -392,6 +396,7 @@
 				86512669181AD9CB002E3F04 /* Resources */,
 				FA8681913FCE0B7122B28FC1 /* Embed Pods Frameworks */,
 				D64B0873D426B18CF362D06D /* Copy Pods Resources */,
+				86FF98AE1C5E8AA3008FF3D7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -481,6 +486,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		86FF98AE1C5E8AA3008FF3D7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 994e8505ab1a174366b5ed058f6010c69e907dc5 9b0b8697eac6a87b30c5595ec6d632f27613d5fe3e73ddc90a674cbda03bdaf6";
 		};
 		D64B0873D426B18CF362D06D /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
