@@ -186,19 +186,11 @@
         }
             break;
         case 3: {
-            switch (indexPath.row) {
-                case 0: {
-                    cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-                    cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:appLinks[(NSUInteger) indexPath.row].imageUrl]]];
-                    cell.textLabel.text = appLinks[(NSUInteger) indexPath.row].title;
-                    cell.detailTextLabel.text = @"";
-                    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-                }
-                    break;
-
-                default:
-                    break;
-            }
+            cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+            cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:appLinks[(NSUInteger) indexPath.row].imageUrl]]];
+            cell.textLabel.text = appLinks[(NSUInteger) indexPath.row].title;
+            cell.detailTextLabel.text = @"";
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }
             break;
 
@@ -288,7 +280,7 @@
             NSString *stringWithData = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 
             NSMutableArray *ids = [NSMutableArray array];
-            NSRegularExpression *re = [[NSRegularExpression alloc] initWithPattern:@"https\\:\\/\\/itunes\\.apple\\.com\\/us\\/app\\/[a-z-]*\\/id([0-9]*)\\?mt=8" options:NSRegularExpressionCaseInsensitive error:nil];
+            NSRegularExpression *re = [[NSRegularExpression alloc] initWithPattern:@"https\\:\\/\\/itunes\\.apple\\.com\\/us\\/app\\/[a-z-+]*\\/id([0-9]*)\\?mt=8" options:NSRegularExpressionCaseInsensitive error:nil];
             NSArray *matches = [re matchesInString:stringWithData options:0 range:NSMakeRange(0, stringWithData.length)];
             for (NSTextCheckingResult *match in matches) {
                 NSString *substring = [stringWithData substringWithRange:[match rangeAtIndex:1]];
