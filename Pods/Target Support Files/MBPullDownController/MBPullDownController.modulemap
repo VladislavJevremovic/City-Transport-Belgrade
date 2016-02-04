@@ -1,0 +1,6 @@
+framework module MBPullDownController {
+  umbrella header "MBPullDownController-umbrella.h"
+
+  export *
+  module * { export * }
+}

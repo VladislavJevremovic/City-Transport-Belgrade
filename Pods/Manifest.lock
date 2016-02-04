@@ -1,0 +1,19 @@
+PODS:
+  - CCHMapClusterController (1.7.0)
+  - Fabric (1.6.4)
+  - MBPullDownController (1.1.1)
+  - Whisper (2.0.2)
+
+DEPENDENCIES:
+  - CCHMapClusterController (~> 1.7.0)
+  - Fabric (~> 1.6.4)
+  - MBPullDownController (~> 1.1.1)
+  - Whisper (~> 2.0.2)
+
+SPEC CHECKSUMS:
+  CCHMapClusterController: d8cd12cd5682ec6cd76d911ac7198f981b6cc1b8
+  Fabric: ed41fd62173c6bdea24ab02c9d7707161eabb750
+  MBPullDownController: 6e5ee6fa099f2283cc207b3d2fa5c4867c652258
+  Whisper: 49abcba82d23dd20f0a9a025797cacd09c8aa3bb
+
+COCOAPODS: 0.39.0

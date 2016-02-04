@@ -1,0 +1,13 @@
+framework module CCHMapClusterController {
+  umbrella header "CCHMapClusterController-umbrella.h"
+
+  export *
+  module * { export * }
+
+  private header "CCHMapClusterControllerDebugPolygon.h"
+  private header "CCHMapClusterControllerUtils.h"
+  private header "CCHMapClusterOperation.h"
+  private header "CCHMapTree.h"
+  private header "CCHMapTreeUtils.h"
+  private header "CCHMapViewDelegateProxy.h"
+}
