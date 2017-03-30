@@ -9,17 +9,16 @@
 import Foundation
 import Whisper
 
-@objc public class WhisperBridge: NSObject {
+@objc open class WhisperBridge: NSObject {
 
-    static public func whisper(text: String, textColor: UIColor, backgroundColor: UIColor, toNavigationController: UINavigationController) {
+    static open func whisper(_ text: String, textColor: UIColor, backgroundColor: UIColor, toNavigationController: UINavigationController) {
         let message = Message(title: text, textColor: textColor, backgroundColor: backgroundColor)
-        Whisper(message, to: toNavigationController)
+        Whisper.show(whisper: message, to: toNavigationController)
     }
 
-    static public func silent(toNavigationController: UINavigationController, silenceAfter: NSTimeInterval) {
+    static open func silent(_ toNavigationController: UINavigationController, silenceAfter: TimeInterval) {
         if silenceAfter > 0.1 {
-            Silent(toNavigationController, after: silenceAfter)
+            Whisper.hide(whisperFrom: toNavigationController, after: silenceAfter)
         }
     }
-
 }

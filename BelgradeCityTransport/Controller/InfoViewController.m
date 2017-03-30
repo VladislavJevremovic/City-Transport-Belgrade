@@ -108,7 +108,7 @@
     static NSString *CellIdentifier = @"Cell";
     static NSString *CellIdentifierMapStyle = @"MapStyleCell";
 
-    UITableViewCell *cell = nil;
+    UITableViewCell *cell = [UITableViewCell new];
 
     switch (indexPath.section) {
         case 0: {

@@ -7,194 +7,195 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00DAC1FF904B78848466B973DF66F86F /* WhistleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBD546F067A3837D220C63FD66A4896 /* WhistleFactory.swift */; };
-		03940D311B82610F5BF89800FD6249D4 /* CCHMapClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F89437E0C1D099852F086C73A0B4AA17 /* CCHMapClusterAnnotation.m */; };
-		0E22EEC54AFB2C13FA6AB51CDC9261CA /* CCHNearCenterMapClusterer.h in Headers */ = {isa = PBXBuildFile; fileRef = 62E6A38FA7238C4BC6DA47DF47304DE4 /* CCHNearCenterMapClusterer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0ED1382F5FCB145782B10057499C1933 /* Whisper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BDA18B099DBC2B80AA2A9625ACDBCC /* Whisper-dummy.m */; };
-		1386C3B65CDFCC76E9E09D5C501B80D9 /* Pods-Belgrade City Transport-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A035F05969ACA3351F239E96FEFD62 /* Pods-Belgrade City Transport-dummy.m */; };
-		17DE3103607EB3CA812227584EC67D64 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07501C09FB0D21C8F674510BD0E6171 /* QuartzCore.framework */; };
-		1873E9E08E71031B1769936249CC94A4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35885CD0EA3EE5653D0CABB42D7DCE7E /* CoreLocation.framework */; };
-		30536225F1DD941F42DAEAC3388BF816 /* CCHFadeInOutMapAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = EE2DC22236BEC2CBD29C6B096B105412 /* CCHFadeInOutMapAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		381647580DCE9C43EE3B2D12194C841F /* CCHCenterOfMassMapClusterer.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FAB7760626C27BD70DACE1ECD4777A /* CCHCenterOfMassMapClusterer.m */; };
-		3828AB2E02DCB6339D2207BC4BDD9A64 /* CCHMapClusterControllerDebugPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 676CF8194B0913A924E0102F4A926C47 /* CCHMapClusterControllerDebugPolygon.m */; };
-		3A97C33B6A81933D108EE6E5C026021B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B01B17E075B61AF4A8F5027949D9D6 /* Foundation.framework */; };
-		4A8283BFE9AA4D3C3F18F1913F217E53 /* CCHMapClusterControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF43F6C6DBCA1E02DCE00CDF12A5159 /* CCHMapClusterControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5293D59E1321453F0BC2BE248155F2BD /* CCHMapClusterControllerUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0988B485610583CA642CB78CAB42F8E8 /* CCHMapClusterControllerUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		560BE9D9FEBECA2555121F06B3BE7093 /* CCHMapClusterer.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BBFFDF225EA6F1F2094A26FB3C5AE1 /* CCHMapClusterer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5CF65B79D28CA36E8800DB1FEE7601B6 /* WhisperFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA9E2D7F9C75378731DA837E1C2ED9 /* WhisperFactory.swift */; };
-		5EF15BB9EFEF8AEEC5D91EDCD972E1A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B01B17E075B61AF4A8F5027949D9D6 /* Foundation.framework */; };
-		5FC8E46ACD9413753EBDB047EDFFDFF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5CFC07648E8F559D0BA7C289E1624A7 /* UIKit.framework */; };
-		603E6B9005ED343DC369193594A2390A /* MBPullDownController.h in Headers */ = {isa = PBXBuildFile; fileRef = EC6B31083DF5CA6CA024EB20F3BB99F1 /* MBPullDownController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64CBCD6C7D5AA8509DFCCC1BDC3DDAD4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46C8DF648C3B94B916229F8886E3BF /* Config.swift */; };
-		67A8286793564593FB15C4019D3DA3CD /* CCHFadeInOutMapAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D316504242F61EDFB0AE9A16DB0866 /* CCHFadeInOutMapAnimator.m */; };
-		6B3600DC70E36674201EE3B8B8960735 /* CCHMapViewDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D19BE8E9AFBCC339F9A90C338425A61E /* CCHMapViewDelegateProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6B842AC99D948C66D40B2446339C4DB9 /* Whisper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BAA44591F6D9949D9219500C70CF745 /* Whisper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BE4952C042928CB59DCA47027647ED2 /* CCHMapClusterController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA8C1E876049E9ECFED86D14DD9314C /* CCHMapClusterController-dummy.m */; };
-		6EDDA9EC4C3CA84D4A6BEC8FAC295383 /* CCHMapViewDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8F877D4CFB42F6A1EF63D2EEA9D57E /* CCHMapViewDelegateProxy.m */; };
-		7425BAB98CA4BCD68C3187341A63FB52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B01B17E075B61AF4A8F5027949D9D6 /* Foundation.framework */; };
-		762EA81FDDAFC38037873A3A2DA257D3 /* CCHCenterOfMassMapClusterer.h in Headers */ = {isa = PBXBuildFile; fileRef = 593E169596A5BE6E7120D27F63D3E784 /* CCHCenterOfMassMapClusterer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		774F2ADC07F5EC17A450F5B6B3CB296F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0534741771589234F6AB53258EFC6F1 /* MapKit.framework */; };
-		7B72D9DDA856B129AD595AAEBEBB3E7D /* MBPullDownController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5A3B9975557709A6C7B3B3757573F8 /* MBPullDownController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7FC318427F0000C36D8B4F3B115FF5EE /* CCHMapTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 168BA01355875E6C3D2DA58C2AC48A99 /* CCHMapTree.m */; };
-		8464B2783FC7A013C7735507C25583A1 /* ShoutFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9BEF7BFAF4550EBAAAE267E9200A93 /* ShoutFactory.swift */; };
-		9B89A3BCAF235ADC9539DF80B99A4A27 /* CCHMapClusterControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7741ABCF1BF8F22F3B078B3E5E643B7D /* CCHMapClusterControllerUtils.m */; };
-		9CAF429EEA36BE37BF38A3FF4C5E40D2 /* CCHMapClusterController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4792294A159D45CE17050589B751DAB2 /* CCHMapClusterController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8E48F2C6DDD0762631F68A7BBFF8A8C /* FontList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B20F6139FE5554A61BDABEABCFE2AEB /* FontList.swift */; };
-		AFFDB389C4CBF27179061BBBD7302DC4 /* CCHMapClusterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966C2936F9362564BD665BF6669FF1F2 /* CCHMapClusterController.m */; };
-		B03C6ACC32956F9499C1D66490226B6B /* CCHMapTreeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A22F5F373E798D5B452AE92823429B20 /* CCHMapTreeUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B9C2DE5206DB0BD149475076985F35E9 /* MBPullDownController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B54D43D1EAF7C7A3FE0FDB7D36EAD19 /* MBPullDownController-dummy.m */; };
-		BAE43727321A64502E836148F1A3AF70 /* WhisperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5F6C1F9FE5AF9183C1B96E4CDBC941 /* WhisperView.swift */; };
-		BE250474D5AE983BB48603CEB1C9B5B0 /* CCHMapClusterController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C827774D0F6F1F91CE38F010907E838 /* CCHMapClusterController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEB30F55BF75CBBA21C853409377B8E5 /* CCHNearCenterMapClusterer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8EEC11F6DA6DF61F6E8EFFE184C5 /* CCHNearCenterMapClusterer.m */; };
-		C0D6FEF5534416782B177CC92DE3CD54 /* MBPullDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38AD1C188B1BBEFABFBB82A0A9DCE1 /* MBPullDownController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C476633889E594F1D5705607E237F5FA /* CCHMapTreeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CEEB91EE3D811E63DB9A0980FEAF33 /* CCHMapTreeUtils.m */; };
-		C5F3F4EE701C35175188296212FC9342 /* CCHMapClusterControllerDebugPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = D68ACAE4163C747566FC2610BEBAE2CE /* CCHMapClusterControllerDebugPolygon.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		C9F474D630DF0BFF8AA30E7D733AE803 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E33E6B996EBB6D78BCE4095B2FB056 /* Message.swift */; };
-		DBECB0784F5BF12DA14EFCB168094450 /* CCHMapClusterOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B63D9C4863346D56615552422F393CE /* CCHMapClusterOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		E42C1DD6F6C0BE7582A370B19F1E9B65 /* CCHMapTree.h in Headers */ = {isa = PBXBuildFile; fileRef = E608376AA488F9D996BFDBD76C0D6490 /* CCHMapTree.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		E7AE08C794CB40F674003D100A38BC79 /* Pods-Belgrade City Transport-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE8243C8DD225169133BBC1EE90ACD2C /* Pods-Belgrade City Transport-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA14E77903BA2119E9AFFDCCF80C4E3B /* CCHMapClusterAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = F03141B664B148B54DBEBC74581555FA /* CCHMapClusterAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC0129C6E6E4F360C6D846DA88E59C1A /* CCHMapClusterOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899B31699F353A2AFB4F6E9E8627B50 /* CCHMapClusterOperation.m */; };
-		F5B01685FCAD818B4D87D04D9AAC2EAC /* CCHMapAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CADA8174656B40E2B8A20D7FBAF7576 /* CCHMapAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6685497F304B6D8A0E81360D15EC6EB /* ColorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073918AE01190AA802992B36CDE6E552 /* ColorList.swift */; };
-		F90FE3DF13D10ED3C6A8BD62D71DE423 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B01B17E075B61AF4A8F5027949D9D6 /* Foundation.framework */; };
+		07021D9FE24586A397D407A3B018084F /* CCHMapClusterControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA4CC5A71F96A7AEEB7EB8B8F7CDCB4 /* CCHMapClusterControllerUtils.m */; };
+		0BA0F2E74A13ABD953FCBCF7304D7D78 /* CCHMapViewDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D21949F85827C8A217C5A1988ECCC39 /* CCHMapViewDelegateProxy.m */; };
+		0CDF03D4F8519557DF59AFA19B67A4C1 /* CCHCenterOfMassMapClusterer.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A949B76D8225C782FBC1BB694A1662 /* CCHCenterOfMassMapClusterer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E16C3407FF02F348440356F294C3C69 /* CCHFadeInOutMapAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1660F9DA47D279836E983CA2B731CEF5 /* CCHFadeInOutMapAnimator.m */; };
+		0E600268A198690B92C7D2DF029A8DDA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3B49C089D61078F6D704ED3E05C18B /* UIKit.framework */; };
+		137E755CF9B425304C9B1C457F12C248 /* Whisper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81A6E12ED4962CB09E8C723D2CC3AB43 /* Whisper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		191FEA8BB62E7D2B6FAADAAD7E912A04 /* CCHMapClusterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7121FF48942F5C8ABD1E0084043E9D /* CCHMapClusterController.m */; };
+		1A0275B3C99F827B0C483511262D5B29 /* MBPullDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3914109E3BA4B7B1F17DDF6C0AEC2163 /* MBPullDownController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1D1EE912F1351C340C5D536E9BAECA51 /* MBPullDownController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8AF658443706FE346AC768200FC707 /* MBPullDownController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D3ABEF7F1CCE2768E13AE942580989A /* CCHMapTree.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA675F1BC294DDCFFD0CFC4AAAC78F7 /* CCHMapTree.m */; };
+		1EB972CCAF5E07503E2E006BE1A8CA31 /* CCHMapClusterOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = EDFFC65132365FD0561C4C663B0B3936 /* CCHMapClusterOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		230049C8DA772378A254D987D784BFCE /* CCHMapClusterControllerDebugPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D38CBAFFF824740A20EAA608E43E84A /* CCHMapClusterControllerDebugPolygon.m */; };
+		2925DBEB3E4D66AFFD50D8086BEDC47E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEE71F48E936D3EEF68066A037FB37F /* Foundation.framework */; };
+		294ED98F16452AB240B5D1D5EBCC43E7 /* CCHMapTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 1535EB76B33F908943BF5654892B6C58 /* CCHMapTree.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		369A344E6F11389827387B3AE9E9AE26 /* CCHMapClusterControllerDebugPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE2C4688E48FE511A5B6BDC00118457 /* CCHMapClusterControllerDebugPolygon.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3E78DF64CB65D42A76A8880DAC274989 /* CCHMapClusterController.h in Headers */ = {isa = PBXBuildFile; fileRef = 25BAC990C5918A10A14AE9B4FBF3FE6D /* CCHMapClusterController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4315456843B12B1AA578D44A3CF2AC36 /* CCHMapTreeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BDF94CA81CC31012A98A785271D2E662 /* CCHMapTreeUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		48EAA0076AAF2427F395A06BFF49D373 /* CCHMapClusterer.h in Headers */ = {isa = PBXBuildFile; fileRef = D33C266C852343E140BBB5F3BF08BF15 /* CCHMapClusterer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A88051C73F5230012FC76CAA8772E38 /* CCHMapAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B5238114E32B86F39ADBFB55FE5497 /* CCHMapAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D18F5D1C3FAD3FF04D87E4F1FFA0C23 /* CCHMapClusterAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F137C22375C1CFD3405965E1D66DDFC /* CCHMapClusterAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F51A013A67B00F3F02F55C5F0F8E6C8 /* CCHCenterOfMassMapClusterer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAE69BE27FACB92CC100AD846FED6E /* CCHCenterOfMassMapClusterer.m */; };
+		5494B3EEB493A21A22018F5A4EAD666F /* CCHNearCenterMapClusterer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DE2B8D9C72063AC5466B77E0F45DC /* CCHNearCenterMapClusterer.m */; };
+		5E40971FE5CA487475FCFB4B2AE8657F /* Pods-Belgrade City Transport-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE8243C8DD225169133BBC1EE90ACD2C /* Pods-Belgrade City Transport-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61347BB8C77ABF493A7C95076C9A1108 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85E1F0AA8F72327F143D346B583BF9E /* MapKit.framework */; };
+		6DF8DE8C45E0F2CDA7B4261EC7F21045 /* CCHMapClusterControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D6BCC208A5370AD114F5F3B7B3E64A8 /* CCHMapClusterControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70A4BE01DAAAE0F09695A87CFAE8F28E /* ShoutFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA06E75DD7BECC2BA63EA13DBC46781 /* ShoutFactory.swift */; };
+		77758502B02267181E7D794688CA47B4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF10B3ABCDEA491D75EEC62A55807DB6 /* CoreLocation.framework */; };
+		7F1E95A31F1F241DCC5D86F868A92903 /* WhistleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E038C4952323C5CE6CBA7DA827F54 /* WhistleFactory.swift */; };
+		919DDDD5C0BCA8A7C33FB51ADD7B0C8C /* Whisper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E140453F6E01341A0F9B7BF09F0A7 /* Whisper-dummy.m */; };
+		961C57EE5D1B92799B81B3762F1FAC2B /* MBPullDownController.h in Headers */ = {isa = PBXBuildFile; fileRef = 296C08D365DD7BF9437D07AC37B6354E /* MBPullDownController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DAC9C19793066202BA2C7266C946434 /* CCHNearCenterMapClusterer.h in Headers */ = {isa = PBXBuildFile; fileRef = C27946A85DEECBE16752958E765852D6 /* CCHNearCenterMapClusterer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F6438224715BC748314ECEC31503D6D /* ColorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8813B33B500374CFF0062AD35C25A683 /* ColorList.swift */; };
+		A2EC9973A59E1FBC3D6F7BB01FC08DCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEE71F48E936D3EEF68066A037FB37F /* Foundation.framework */; };
+		A6B34DF5271EA94A4435D969FF1EE130 /* CCHMapTreeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 869C422E616AF4C4A423E03B09710AA4 /* CCHMapTreeUtils.m */; };
+		A765C4F78904DC1E28AEAED360C61838 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842A8DC289DE64053624332CA6D84988 /* QuartzCore.framework */; };
+		ACFEC35BDAB79B1F94BF8AC1E28284E5 /* CCHFadeInOutMapAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B048E12C8391F9DFF1312B98A21695E /* CCHFadeInOutMapAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE916C0E1D7C26F73924E63DF0EEE818 /* CCHMapClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 380E9DE2BF2968C89CFB89B3119915E6 /* CCHMapClusterAnnotation.m */; };
+		B2B61EBC4E94DDF77EB443C376C44F9E /* CCHMapClusterOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 975232B9B44721B964C8C20A581A3A1A /* CCHMapClusterOperation.m */; };
+		B46E687AEC7F52EFBE04DB6FDD3E5F4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEE71F48E936D3EEF68066A037FB37F /* Foundation.framework */; };
+		B4FFC012721F98A787D4A26DFBB46E7E /* CCHMapClusterController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53321FC7E5DCC0B93B605762378B26D2 /* CCHMapClusterController-dummy.m */; };
+		B64E5DDE3CF27E8B78273ADC2C261D61 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501B9D684A44228DD7C491381B5EB7C /* Config.swift */; };
+		B7844609174B1826CC89C758EADC1294 /* Showing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98C877E2C74661316E490C58E9417F6 /* Showing.swift */; };
+		B81BF78566597D54E0BF5277ACBCFAC7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA348D4A8D23AF3E21D8E55FB9D8DC33 /* Message.swift */; };
+		B90E246537003023305FEF7839975931 /* CCHMapViewDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = F704DE8E468A928AA65C90B01A2A7BEB /* CCHMapViewDelegateProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BB166DE8F476C6C5C4A66E2EC2675AA7 /* FontList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDE7037F15F6B207C37C3305126F946 /* FontList.swift */; };
+		C2174AE6681EEDE41566C1EEAA6582FE /* MBPullDownController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A9D046ED2E238FA81E3F287EB0940B /* MBPullDownController-dummy.m */; };
+		C2590078D7670EC6BEBE2780134F5B7B /* CCHMapClusterControllerUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C57EBE2BB5DDD03AB2DFB59E6F8A28 /* CCHMapClusterControllerUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CF4601CA5E30CA091BF645886CBC92FB /* CCHMapClusterController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D47705C345F6D1AE8206662156C8199 /* CCHMapClusterController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E995DE8C23E784CAB62C0A798F176A /* Pods-Belgrade City Transport-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A035F05969ACA3351F239E96FEFD62 /* Pods-Belgrade City Transport-dummy.m */; };
+		D8030E64A00EBCC3335469E91090FB4B /* WhisperFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56113DB0AB1618DEB987F7AF3006FEF7 /* WhisperFactory.swift */; };
+		D810AA21986DDB3056BF4ED09F488CFB /* WhisperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDAC668C620909B329F3FF0560D7C67 /* WhisperView.swift */; };
+		F381EB2F2D0016E17F006F5250E46414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEE71F48E936D3EEF68066A037FB37F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		464BB807AF8BA43FCB2B06A4EE574A65 /* PBXContainerItemProxy */ = {
+		37A406911FF004DAEC9D0F8E93849CEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F79AE45BF375D76A77FC5903DC1ABBED;
+			remoteGlobalIDString = DC6D72C4F604D7B6D1A2FC7F1CEDDC08;
+			remoteInfo = CCHMapClusterController;
+		};
+		78C4E41853925DC96E7578B9F016358E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB383A423A78A2B4904DE3381DAE0B4B;
 			remoteInfo = Whisper;
 		};
-		5B6C4E1FFD6CBA3F6D9B96439D5A7DA8 /* PBXContainerItemProxy */ = {
+		F413BDBD9D4CF6B25481857776FB8ED0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3BE5FD3DA02E5B9874000602317F08B5;
+			remoteGlobalIDString = 4F0C29CFD553F79DF89F61587BBC17C2;
 			remoteInfo = MBPullDownController;
-		};
-		E51A7F718FF6352AB31F6723F0BF15D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 89AD13529F3D133F1B9548298D3EE89E;
-			remoteInfo = CCHMapClusterController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06FAB7760626C27BD70DACE1ECD4777A /* CCHCenterOfMassMapClusterer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHCenterOfMassMapClusterer.m; path = CCHMapClusterController/CCHCenterOfMassMapClusterer.m; sourceTree = "<group>"; };
-		073918AE01190AA802992B36CDE6E552 /* ColorList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorList.swift; path = Source/Configuration/ColorList.swift; sourceTree = "<group>"; };
-		0988B485610583CA642CB78CAB42F8E8 /* CCHMapClusterControllerUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterControllerUtils.h; path = CCHMapClusterController/CCHMapClusterControllerUtils.h; sourceTree = "<group>"; };
-		0C827774D0F6F1F91CE38F010907E838 /* CCHMapClusterController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterController.h; path = CCHMapClusterController/CCHMapClusterController.h; sourceTree = "<group>"; };
-		1011AF0233986C7F716CF6A38E082279 /* CCHMapClusterController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCHMapClusterController.xcconfig; sourceTree = "<group>"; };
-		14CEEB91EE3D811E63DB9A0980FEAF33 /* CCHMapTreeUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapTreeUtils.m; path = CCHMapClusterController/CCHMapTreeUtils.m; sourceTree = "<group>"; };
-		168BA01355875E6C3D2DA58C2AC48A99 /* CCHMapTree.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapTree.m; path = CCHMapClusterController/CCHMapTree.m; sourceTree = "<group>"; };
-		1899B31699F353A2AFB4F6E9E8627B50 /* CCHMapClusterOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterOperation.m; path = CCHMapClusterController/CCHMapClusterOperation.m; sourceTree = "<group>"; };
-		2C46C8DF648C3B94B916229F8886E3BF /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Source/Config.swift; sourceTree = "<group>"; };
-		35885CD0EA3EE5653D0CABB42D7DCE7E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
-		374043EBD6BD2C76E7248314AA344D11 /* CCHMapClusterController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CCHMapClusterController.modulemap; sourceTree = "<group>"; };
-		3B63D9C4863346D56615552422F393CE /* CCHMapClusterOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterOperation.h; path = CCHMapClusterController/CCHMapClusterOperation.h; sourceTree = "<group>"; };
-		3BAA44591F6D9949D9219500C70CF745 /* Whisper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Whisper-umbrella.h"; sourceTree = "<group>"; };
-		3CADA8174656B40E2B8A20D7FBAF7576 /* CCHMapAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapAnimator.h; path = CCHMapClusterController/CCHMapAnimator.h; sourceTree = "<group>"; };
-		3E37BD5C0AC05B81F51E2768B79E8F21 /* MBPullDownController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBPullDownController.xcconfig; sourceTree = "<group>"; };
-		45E67081CECDCD359723290ABB1168F3 /* Pods-Belgrade City Transport.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Belgrade City Transport.modulemap"; sourceTree = "<group>"; };
-		4792294A159D45CE17050589B751DAB2 /* CCHMapClusterController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCHMapClusterController-umbrella.h"; sourceTree = "<group>"; };
-		4CAA9E2D7F9C75378731DA837E1C2ED9 /* WhisperFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhisperFactory.swift; path = Source/WhisperFactory.swift; sourceTree = "<group>"; };
-		54B01B17E075B61AF4A8F5027949D9D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		593E169596A5BE6E7120D27F63D3E784 /* CCHCenterOfMassMapClusterer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHCenterOfMassMapClusterer.h; path = CCHMapClusterController/CCHCenterOfMassMapClusterer.h; sourceTree = "<group>"; };
-		5CC29A5DE4E3A3910897E5CCCFD416BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D5A3B9975557709A6C7B3B3757573F8 /* MBPullDownController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBPullDownController-umbrella.h"; sourceTree = "<group>"; };
-		5E9BEF7BFAF4550EBAAAE267E9200A93 /* ShoutFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShoutFactory.swift; path = Source/ShoutFactory.swift; sourceTree = "<group>"; };
-		5F5F6C1F9FE5AF9183C1B96E4CDBC941 /* WhisperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhisperView.swift; path = Source/WhisperView.swift; sourceTree = "<group>"; };
-		5F8F877D4CFB42F6A1EF63D2EEA9D57E /* CCHMapViewDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapViewDelegateProxy.m; path = CCHMapClusterController/CCHMapViewDelegateProxy.m; sourceTree = "<group>"; };
-		61BDA18B099DBC2B80AA2A9625ACDBCC /* Whisper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Whisper-dummy.m"; sourceTree = "<group>"; };
-		62E6A38FA7238C4BC6DA47DF47304DE4 /* CCHNearCenterMapClusterer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHNearCenterMapClusterer.h; path = CCHMapClusterController/CCHNearCenterMapClusterer.h; sourceTree = "<group>"; };
-		62EAD309CC941C2DAE1F7467CCA49A3A /* CCHMapClusterController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCHMapClusterController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		676CF8194B0913A924E0102F4A926C47 /* CCHMapClusterControllerDebugPolygon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterControllerDebugPolygon.m; path = CCHMapClusterController/CCHMapClusterControllerDebugPolygon.m; sourceTree = "<group>"; };
+		1535EB76B33F908943BF5654892B6C58 /* CCHMapTree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapTree.h; path = CCHMapClusterController/CCHMapTree.h; sourceTree = "<group>"; };
+		1660F9DA47D279836E983CA2B731CEF5 /* CCHFadeInOutMapAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHFadeInOutMapAnimator.m; path = CCHMapClusterController/CCHFadeInOutMapAnimator.m; sourceTree = "<group>"; };
+		16A78C66B22FF2E80B4BD9C4CCEB0304 /* MBPullDownController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBPullDownController-prefix.pch"; sourceTree = "<group>"; };
+		19CDE38E22503029E2C464B5BE279046 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA06E75DD7BECC2BA63EA13DBC46781 /* ShoutFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShoutFactory.swift; path = Source/ShoutFactory.swift; sourceTree = "<group>"; };
+		25BAC990C5918A10A14AE9B4FBF3FE6D /* CCHMapClusterController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterController.h; path = CCHMapClusterController/CCHMapClusterController.h; sourceTree = "<group>"; };
+		296C08D365DD7BF9437D07AC37B6354E /* MBPullDownController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBPullDownController.h; path = MBPullDownController/MBPullDownController.h; sourceTree = "<group>"; };
+		2E3E140453F6E01341A0F9B7BF09F0A7 /* Whisper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Whisper-dummy.m"; sourceTree = "<group>"; };
+		380E9DE2BF2968C89CFB89B3119915E6 /* CCHMapClusterAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterAnnotation.m; path = CCHMapClusterController/CCHMapClusterAnnotation.m; sourceTree = "<group>"; };
+		38A949B76D8225C782FBC1BB694A1662 /* CCHCenterOfMassMapClusterer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHCenterOfMassMapClusterer.h; path = CCHMapClusterController/CCHCenterOfMassMapClusterer.h; sourceTree = "<group>"; };
+		3914109E3BA4B7B1F17DDF6C0AEC2163 /* MBPullDownController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBPullDownController.m; path = MBPullDownController/MBPullDownController.m; sourceTree = "<group>"; };
+		3C7121FF48942F5C8ABD1E0084043E9D /* CCHMapClusterController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterController.m; path = CCHMapClusterController/CCHMapClusterController.m; sourceTree = "<group>"; };
+		3D38CBAFFF824740A20EAA608E43E84A /* CCHMapClusterControllerDebugPolygon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterControllerDebugPolygon.m; path = CCHMapClusterController/CCHMapClusterControllerDebugPolygon.m; sourceTree = "<group>"; };
+		45E67081CECDCD359723290ABB1168F3 /* Pods-Belgrade City Transport.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Belgrade City Transport.modulemap"; sourceTree = "<group>"; };
+		4CA4CC5A71F96A7AEEB7EB8B8F7CDCB4 /* CCHMapClusterControllerUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterControllerUtils.m; path = CCHMapClusterController/CCHMapClusterControllerUtils.m; sourceTree = "<group>"; };
+		4D21949F85827C8A217C5A1988ECCC39 /* CCHMapViewDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapViewDelegateProxy.m; path = CCHMapClusterController/CCHMapViewDelegateProxy.m; sourceTree = "<group>"; };
+		4D47705C345F6D1AE8206662156C8199 /* CCHMapClusterController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCHMapClusterController-umbrella.h"; sourceTree = "<group>"; };
+		4FDAC668C620909B329F3FF0560D7C67 /* WhisperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhisperView.swift; path = Source/WhisperView.swift; sourceTree = "<group>"; };
+		53321FC7E5DCC0B93B605762378B26D2 /* CCHMapClusterController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CCHMapClusterController-dummy.m"; sourceTree = "<group>"; };
+		56113DB0AB1618DEB987F7AF3006FEF7 /* WhisperFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhisperFactory.swift; path = Source/WhisperFactory.swift; sourceTree = "<group>"; };
+		63B5238114E32B86F39ADBFB55FE5497 /* CCHMapAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapAnimator.h; path = CCHMapClusterController/CCHMapAnimator.h; sourceTree = "<group>"; };
+		6CDE7037F15F6B207C37C3305126F946 /* FontList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontList.swift; path = Source/Configuration/FontList.swift; sourceTree = "<group>"; };
+		6D6BCC208A5370AD114F5F3B7B3E64A8 /* CCHMapClusterControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterControllerDelegate.h; path = CCHMapClusterController/CCHMapClusterControllerDelegate.h; sourceTree = "<group>"; };
+		6DEE71F48E936D3EEF68066A037FB37F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6EA2626D25BF67BFE834863AD30E7D57 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EC5A4E3385927760C5F6FF329807B8F /* Pods-Belgrade City Transport-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Belgrade City Transport-frameworks.sh"; sourceTree = "<group>"; };
 		6FE05558A40655D1794F3A2524439231 /* Pods-Belgrade City Transport-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Belgrade City Transport-acknowledgements.plist"; sourceTree = "<group>"; };
-		72A09673560D7DE5CA579ED7D02060E9 /* Whisper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Whisper.xcconfig; sourceTree = "<group>"; };
-		7741ABCF1BF8F22F3B078B3E5E643B7D /* CCHMapClusterControllerUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterControllerUtils.m; path = CCHMapClusterController/CCHMapClusterControllerUtils.m; sourceTree = "<group>"; };
-		7B20F6139FE5554A61BDABEABCFE2AEB /* FontList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontList.swift; path = Source/Configuration/FontList.swift; sourceTree = "<group>"; };
-		7C38AD1C188B1BBEFABFBB82A0A9DCE1 /* MBPullDownController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBPullDownController.m; path = MBPullDownController/MBPullDownController.m; sourceTree = "<group>"; };
-		7C5FE21ECFFA982B717D4367F6D0F655 /* MBPullDownController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBPullDownController-prefix.pch"; sourceTree = "<group>"; };
-		8018F506929851DB40B91357979FA7C7 /* Whisper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Whisper.modulemap; sourceTree = "<group>"; };
-		8B54D43D1EAF7C7A3FE0FDB7D36EAD19 /* MBPullDownController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBPullDownController-dummy.m"; sourceTree = "<group>"; };
-		9158200201DBFDB38584F55C7B52292B /* Whisper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Whisper-prefix.pch"; sourceTree = "<group>"; };
-		94BBFFDF225EA6F1F2094A26FB3C5AE1 /* CCHMapClusterer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterer.h; path = CCHMapClusterController/CCHMapClusterer.h; sourceTree = "<group>"; };
-		966C2936F9362564BD665BF6669FF1F2 /* CCHMapClusterController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterController.m; path = CCHMapClusterController/CCHMapClusterController.m; sourceTree = "<group>"; };
-		9AC995F28E0BBC93EF59792D7469C986 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
-		9DF61116BE0B14D8DCDADC7F2A2CD5F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A22F5F373E798D5B452AE92823429B20 /* CCHMapTreeUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapTreeUtils.h; path = CCHMapClusterController/CCHMapTreeUtils.h; sourceTree = "<group>"; };
-		A4855A43D8FD51BDAA5A7820035AE34A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD61073325C3B2EDF124FD7C41AB6A6F /* Whisper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Whisper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0E33E6B996EBB6D78BCE4095B2FB056 /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Source/Message.swift; sourceTree = "<group>"; };
-		B3456171734C122F53FB625AA5B9F6E8 /* CCHMapClusterController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCHMapClusterController-prefix.pch"; sourceTree = "<group>"; };
-		B8D316504242F61EDFB0AE9A16DB0866 /* CCHFadeInOutMapAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHFadeInOutMapAnimator.m; path = CCHMapClusterController/CCHFadeInOutMapAnimator.m; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BBBD546F067A3837D220C63FD66A4896 /* WhistleFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhistleFactory.swift; path = Source/WhistleFactory.swift; sourceTree = "<group>"; };
+		7B048E12C8391F9DFF1312B98A21695E /* CCHFadeInOutMapAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHFadeInOutMapAnimator.h; path = CCHMapClusterController/CCHFadeInOutMapAnimator.h; sourceTree = "<group>"; };
+		7D8DE2B8D9C72063AC5466B77E0F45DC /* CCHNearCenterMapClusterer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHNearCenterMapClusterer.m; path = CCHMapClusterController/CCHNearCenterMapClusterer.m; sourceTree = "<group>"; };
+		7F137C22375C1CFD3405965E1D66DDFC /* CCHMapClusterAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterAnnotation.h; path = CCHMapClusterController/CCHMapClusterAnnotation.h; sourceTree = "<group>"; };
+		81A6E12ED4962CB09E8C723D2CC3AB43 /* Whisper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Whisper-umbrella.h"; sourceTree = "<group>"; };
+		842A8DC289DE64053624332CA6D84988 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		869C422E616AF4C4A423E03B09710AA4 /* CCHMapTreeUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapTreeUtils.m; path = CCHMapClusterController/CCHMapTreeUtils.m; sourceTree = "<group>"; };
+		8813B33B500374CFF0062AD35C25A683 /* ColorList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorList.swift; path = Source/Configuration/ColorList.swift; sourceTree = "<group>"; };
+		8A9FDE477F974E487B6F47C1EC9EFB8E /* Whisper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Whisper.framework; path = Whisper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		941C257C45083D3DCCF768F7CD5BF801 /* Whisper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Whisper.modulemap; sourceTree = "<group>"; };
+		975232B9B44721B964C8C20A581A3A1A /* CCHMapClusterOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterOperation.m; path = CCHMapClusterController/CCHMapClusterOperation.m; sourceTree = "<group>"; };
+		97C57EBE2BB5DDD03AB2DFB59E6F8A28 /* CCHMapClusterControllerUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterControllerUtils.h; path = CCHMapClusterController/CCHMapClusterControllerUtils.h; sourceTree = "<group>"; };
+		9AFAE69BE27FACB92CC100AD846FED6E /* CCHCenterOfMassMapClusterer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHCenterOfMassMapClusterer.m; path = CCHMapClusterController/CCHCenterOfMassMapClusterer.m; sourceTree = "<group>"; };
+		9C82CB75DFD3F5C513D59DAC43882A97 /* CCHMapClusterController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCHMapClusterController.xcconfig; sourceTree = "<group>"; };
+		9EA2780865E1ABE24CC03E7204FA8456 /* Whisper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Whisper.xcconfig; sourceTree = "<group>"; };
+		ACBA539A5F3D61368B20EA8FFF195EDF /* CCHMapClusterController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CCHMapClusterController.framework; path = CCHMapClusterController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85E1F0AA8F72327F143D346B583BF9E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		B98C877E2C74661316E490C58E9417F6 /* Showing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Showing.swift; path = Source/Showing.swift; sourceTree = "<group>"; };
+		BDF94CA81CC31012A98A785271D2E662 /* CCHMapTreeUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapTreeUtils.h; path = CCHMapClusterController/CCHMapTreeUtils.h; sourceTree = "<group>"; };
 		BFAD95BDBCFD3A53918B289DE6CCED16 /* Pods-Belgrade City Transport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Belgrade City Transport.debug.xcconfig"; sourceTree = "<group>"; };
-		C07501C09FB0D21C8F674510BD0E6171 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		C5CFC07648E8F559D0BA7C289E1624A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C65C7833174E2EA1D288F35009245D1D /* MBPullDownController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBPullDownController.modulemap; sourceTree = "<group>"; };
+		C27946A85DEECBE16752958E765852D6 /* CCHNearCenterMapClusterer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHNearCenterMapClusterer.h; path = CCHMapClusterController/CCHNearCenterMapClusterer.h; sourceTree = "<group>"; };
+		C501B9D684A44228DD7C491381B5EB7C /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Source/Config.swift; sourceTree = "<group>"; };
 		C73640607646F727E67D82AE1CF8DE42 /* Pods-Belgrade City Transport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Belgrade City Transport.release.xcconfig"; sourceTree = "<group>"; };
-		CD24FF0031953EAF2FDAF24CDABFEC00 /* Pods_Belgrade_City_Transport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Belgrade_City_Transport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEEC8EEC11F6DA6DF61F6E8EFFE184C5 /* CCHNearCenterMapClusterer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHNearCenterMapClusterer.m; path = CCHMapClusterController/CCHNearCenterMapClusterer.m; sourceTree = "<group>"; };
-		D0534741771589234F6AB53258EFC6F1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
-		D19BE8E9AFBCC339F9A90C338425A61E /* CCHMapViewDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapViewDelegateProxy.h; path = CCHMapClusterController/CCHMapViewDelegateProxy.h; sourceTree = "<group>"; };
-		D68ACAE4163C747566FC2610BEBAE2CE /* CCHMapClusterControllerDebugPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterControllerDebugPolygon.h; path = CCHMapClusterController/CCHMapClusterControllerDebugPolygon.h; sourceTree = "<group>"; };
-		D9270AAF4D5D284B3690B0CDD635B4CE /* MBPullDownController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBPullDownController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAF43F6C6DBCA1E02DCE00CDF12A5159 /* CCHMapClusterControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterControllerDelegate.h; path = CCHMapClusterController/CCHMapClusterControllerDelegate.h; sourceTree = "<group>"; };
-		DCA8C1E876049E9ECFED86D14DD9314C /* CCHMapClusterController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CCHMapClusterController-dummy.m"; sourceTree = "<group>"; };
+		CA3B49C089D61078F6D704ED3E05C18B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CAD170560848B8567DEB6CFCB5EEDD10 /* MBPullDownController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBPullDownController.framework; path = MBPullDownController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD281A5754D8CEBE19BEB19C42A5A46E /* MBPullDownController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBPullDownController.modulemap; sourceTree = "<group>"; };
+		CF10B3ABCDEA491D75EEC62A55807DB6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		CFDB6CAA181007B65F23FA1C6D329471 /* Pods_Belgrade_City_Transport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Belgrade_City_Transport.framework; path = "Pods-Belgrade City Transport.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33C266C852343E140BBB5F3BF08BF15 /* CCHMapClusterer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterer.h; path = CCHMapClusterController/CCHMapClusterer.h; sourceTree = "<group>"; };
+		D3A9D046ED2E238FA81E3F287EB0940B /* MBPullDownController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBPullDownController-dummy.m"; sourceTree = "<group>"; };
+		D8201AFD1DE5E757613FC535EF08FC25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D916772CBAFA88A30BDD1E4A883494F1 /* CCHMapClusterController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCHMapClusterController-prefix.pch"; sourceTree = "<group>"; };
+		DBB8E1F6AE8E22F8B38744E9694B5BA8 /* CCHMapClusterController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CCHMapClusterController.modulemap; sourceTree = "<group>"; };
 		DE895A2FAE6E4355E454A22A53F3DAC9 /* Pods-Belgrade City Transport-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Belgrade City Transport-resources.sh"; sourceTree = "<group>"; };
-		E608376AA488F9D996BFDBD76C0D6490 /* CCHMapTree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapTree.h; path = CCHMapClusterController/CCHMapTree.h; sourceTree = "<group>"; };
+		DE8AF658443706FE346AC768200FC707 /* MBPullDownController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBPullDownController-umbrella.h"; sourceTree = "<group>"; };
+		DF748F63F38290490047909218B4275B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6AC055F2072FF14D03AE5DCE424CA87 /* Pods-Belgrade City Transport-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Belgrade City Transport-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E7A035F05969ACA3351F239E96FEFD62 /* Pods-Belgrade City Transport-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Belgrade City Transport-dummy.m"; sourceTree = "<group>"; };
-		EC6B31083DF5CA6CA024EB20F3BB99F1 /* MBPullDownController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBPullDownController.h; path = MBPullDownController/MBPullDownController.h; sourceTree = "<group>"; };
-		EE2DC22236BEC2CBD29C6B096B105412 /* CCHFadeInOutMapAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHFadeInOutMapAnimator.h; path = CCHMapClusterController/CCHFadeInOutMapAnimator.h; sourceTree = "<group>"; };
+		EC90B94629A8DA3306BAC15C216E753A /* MBPullDownController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBPullDownController.xcconfig; sourceTree = "<group>"; };
+		EDFFC65132365FD0561C4C663B0B3936 /* CCHMapClusterOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterOperation.h; path = CCHMapClusterController/CCHMapClusterOperation.h; sourceTree = "<group>"; };
 		EE8243C8DD225169133BBC1EE90ACD2C /* Pods-Belgrade City Transport-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Belgrade City Transport-umbrella.h"; sourceTree = "<group>"; };
-		F03141B664B148B54DBEBC74581555FA /* CCHMapClusterAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterAnnotation.h; path = CCHMapClusterController/CCHMapClusterAnnotation.h; sourceTree = "<group>"; };
-		F89437E0C1D099852F086C73A0B4AA17 /* CCHMapClusterAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterAnnotation.m; path = CCHMapClusterController/CCHMapClusterAnnotation.m; sourceTree = "<group>"; };
+		EE84582B0A7DBB2D090D58E51975CABC /* Whisper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Whisper-prefix.pch"; sourceTree = "<group>"; };
+		EEE2C4688E48FE511A5B6BDC00118457 /* CCHMapClusterControllerDebugPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterControllerDebugPolygon.h; path = CCHMapClusterController/CCHMapClusterControllerDebugPolygon.h; sourceTree = "<group>"; };
+		F704DE8E468A928AA65C90B01A2A7BEB /* CCHMapViewDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapViewDelegateProxy.h; path = CCHMapClusterController/CCHMapViewDelegateProxy.h; sourceTree = "<group>"; };
+		FA348D4A8D23AF3E21D8E55FB9D8DC33 /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Source/Message.swift; sourceTree = "<group>"; };
+		FAA675F1BC294DDCFFD0CFC4AAAC78F7 /* CCHMapTree.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapTree.m; path = CCHMapClusterController/CCHMapTree.m; sourceTree = "<group>"; };
+		FB4E038C4952323C5CE6CBA7DA827F54 /* WhistleFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhistleFactory.swift; path = Source/WhistleFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1358829A42765EF9ADAAF5CDA9E372B8 /* Frameworks */ = {
+		2E5214DCAE66CFD13BF231BD353AE376 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EF15BB9EFEF8AEEC5D91EDCD972E1A0 /* Foundation.framework in Frameworks */,
-				17DE3103607EB3CA812227584EC67D64 /* QuartzCore.framework in Frameworks */,
+				A2EC9973A59E1FBC3D6F7BB01FC08DCD /* Foundation.framework in Frameworks */,
+				A765C4F78904DC1E28AEAED360C61838 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E9AD810457F6993D699F79197371413 /* Frameworks */ = {
+		4368696AFFB93CF3FFEBA381390CEC02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F90FE3DF13D10ED3C6A8BD62D71DE423 /* Foundation.framework in Frameworks */,
+				77758502B02267181E7D794688CA47B4 /* CoreLocation.framework in Frameworks */,
+				2925DBEB3E4D66AFFD50D8086BEDC47E /* Foundation.framework in Frameworks */,
+				61347BB8C77ABF493A7C95076C9A1108 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		312B3A7937DC4B2EA2D565E8B10B4BA2 /* Frameworks */ = {
+		7536A41DF253D0A697FE2E454EACBB8D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A97C33B6A81933D108EE6E5C026021B /* Foundation.framework in Frameworks */,
-				5FC8E46ACD9413753EBDB047EDFFDFF8 /* UIKit.framework in Frameworks */,
+				F381EB2F2D0016E17F006F5250E46414 /* Foundation.framework in Frameworks */,
+				0E600268A198690B92C7D2DF029A8DDA /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F3FB9C26E4986F88597B2A31144C5A5 /* Frameworks */ = {
+		BB58CD8EACEDB4C0A4EF3B4EAE832C86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1873E9E08E71031B1769936249CC94A4 /* CoreLocation.framework in Frameworks */,
-				7425BAB98CA4BCD68C3187341A63FB52 /* Foundation.framework in Frameworks */,
-				774F2ADC07F5EC17A450F5B6B3CB296F /* MapKit.framework in Frameworks */,
+				B46E687AEC7F52EFBE04DB6FDD3E5F4B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,139 +220,127 @@
 			path = "Target Support Files/Pods-Belgrade City Transport";
 			sourceTree = "<group>";
 		};
-		0C4D0D7E2A712590DED29E24BC5FE21B /* Products */ = {
+		20A9946BF600943609946104C0ED3980 /* CCHMapClusterController */ = {
 			isa = PBXGroup;
 			children = (
-				62EAD309CC941C2DAE1F7467CCA49A3A /* CCHMapClusterController.framework */,
-				D9270AAF4D5D284B3690B0CDD635B4CE /* MBPullDownController.framework */,
-				CD24FF0031953EAF2FDAF24CDABFEC00 /* Pods_Belgrade_City_Transport.framework */,
-				AD61073325C3B2EDF124FD7C41AB6A6F /* Whisper.framework */,
+				38A949B76D8225C782FBC1BB694A1662 /* CCHCenterOfMassMapClusterer.h */,
+				9AFAE69BE27FACB92CC100AD846FED6E /* CCHCenterOfMassMapClusterer.m */,
+				7B048E12C8391F9DFF1312B98A21695E /* CCHFadeInOutMapAnimator.h */,
+				1660F9DA47D279836E983CA2B731CEF5 /* CCHFadeInOutMapAnimator.m */,
+				63B5238114E32B86F39ADBFB55FE5497 /* CCHMapAnimator.h */,
+				7F137C22375C1CFD3405965E1D66DDFC /* CCHMapClusterAnnotation.h */,
+				380E9DE2BF2968C89CFB89B3119915E6 /* CCHMapClusterAnnotation.m */,
+				25BAC990C5918A10A14AE9B4FBF3FE6D /* CCHMapClusterController.h */,
+				3C7121FF48942F5C8ABD1E0084043E9D /* CCHMapClusterController.m */,
+				EEE2C4688E48FE511A5B6BDC00118457 /* CCHMapClusterControllerDebugPolygon.h */,
+				3D38CBAFFF824740A20EAA608E43E84A /* CCHMapClusterControllerDebugPolygon.m */,
+				6D6BCC208A5370AD114F5F3B7B3E64A8 /* CCHMapClusterControllerDelegate.h */,
+				97C57EBE2BB5DDD03AB2DFB59E6F8A28 /* CCHMapClusterControllerUtils.h */,
+				4CA4CC5A71F96A7AEEB7EB8B8F7CDCB4 /* CCHMapClusterControllerUtils.m */,
+				D33C266C852343E140BBB5F3BF08BF15 /* CCHMapClusterer.h */,
+				EDFFC65132365FD0561C4C663B0B3936 /* CCHMapClusterOperation.h */,
+				975232B9B44721B964C8C20A581A3A1A /* CCHMapClusterOperation.m */,
+				1535EB76B33F908943BF5654892B6C58 /* CCHMapTree.h */,
+				FAA675F1BC294DDCFFD0CFC4AAAC78F7 /* CCHMapTree.m */,
+				BDF94CA81CC31012A98A785271D2E662 /* CCHMapTreeUtils.h */,
+				869C422E616AF4C4A423E03B09710AA4 /* CCHMapTreeUtils.m */,
+				F704DE8E468A928AA65C90B01A2A7BEB /* CCHMapViewDelegateProxy.h */,
+				4D21949F85827C8A217C5A1988ECCC39 /* CCHMapViewDelegateProxy.m */,
+				C27946A85DEECBE16752958E765852D6 /* CCHNearCenterMapClusterer.h */,
+				7D8DE2B8D9C72063AC5466B77E0F45DC /* CCHNearCenterMapClusterer.m */,
+				A7AA6A308F847A62479C061CD741D5D7 /* Support Files */,
 			);
-			name = Products;
+			name = CCHMapClusterController;
+			path = CCHMapClusterController;
 			sourceTree = "<group>";
 		};
 		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				42FDADAC465D4CDD862DEAD884657757 /* iOS */,
+				CBBA553B47283D24029D54703D58AD4E /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2D1F5ED0697F82D455B530561744DB59 /* MBPullDownController */ = {
+		30C8CE4222EF0360EF817CBFEEFC8194 /* Whisper */ = {
 			isa = PBXGroup;
 			children = (
-				EC6B31083DF5CA6CA024EB20F3BB99F1 /* MBPullDownController.h */,
-				7C38AD1C188B1BBEFABFBB82A0A9DCE1 /* MBPullDownController.m */,
-				5A9EB0C9880601D6F5773B4E27EF94AE /* Support Files */,
+				8813B33B500374CFF0062AD35C25A683 /* ColorList.swift */,
+				C501B9D684A44228DD7C491381B5EB7C /* Config.swift */,
+				6CDE7037F15F6B207C37C3305126F946 /* FontList.swift */,
+				FA348D4A8D23AF3E21D8E55FB9D8DC33 /* Message.swift */,
+				1DA06E75DD7BECC2BA63EA13DBC46781 /* ShoutFactory.swift */,
+				B98C877E2C74661316E490C58E9417F6 /* Showing.swift */,
+				56113DB0AB1618DEB987F7AF3006FEF7 /* WhisperFactory.swift */,
+				4FDAC668C620909B329F3FF0560D7C67 /* WhisperView.swift */,
+				FB4E038C4952323C5CE6CBA7DA827F54 /* WhistleFactory.swift */,
+				7EFBC96866F6F407D47AA986F367A380 /* Support Files */,
 			);
-			path = MBPullDownController;
+			name = Whisper;
+			path = Whisper;
 			sourceTree = "<group>";
 		};
-		31DD77218919E1D54F1AA7EF5E1BF8DD /* CCHMapClusterController */ = {
+		3D744AFEE8F50C9CB8C0BDC222412413 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				593E169596A5BE6E7120D27F63D3E784 /* CCHCenterOfMassMapClusterer.h */,
-				06FAB7760626C27BD70DACE1ECD4777A /* CCHCenterOfMassMapClusterer.m */,
-				EE2DC22236BEC2CBD29C6B096B105412 /* CCHFadeInOutMapAnimator.h */,
-				B8D316504242F61EDFB0AE9A16DB0866 /* CCHFadeInOutMapAnimator.m */,
-				3CADA8174656B40E2B8A20D7FBAF7576 /* CCHMapAnimator.h */,
-				F03141B664B148B54DBEBC74581555FA /* CCHMapClusterAnnotation.h */,
-				F89437E0C1D099852F086C73A0B4AA17 /* CCHMapClusterAnnotation.m */,
-				0C827774D0F6F1F91CE38F010907E838 /* CCHMapClusterController.h */,
-				966C2936F9362564BD665BF6669FF1F2 /* CCHMapClusterController.m */,
-				D68ACAE4163C747566FC2610BEBAE2CE /* CCHMapClusterControllerDebugPolygon.h */,
-				676CF8194B0913A924E0102F4A926C47 /* CCHMapClusterControllerDebugPolygon.m */,
-				DAF43F6C6DBCA1E02DCE00CDF12A5159 /* CCHMapClusterControllerDelegate.h */,
-				0988B485610583CA642CB78CAB42F8E8 /* CCHMapClusterControllerUtils.h */,
-				7741ABCF1BF8F22F3B078B3E5E643B7D /* CCHMapClusterControllerUtils.m */,
-				94BBFFDF225EA6F1F2094A26FB3C5AE1 /* CCHMapClusterer.h */,
-				3B63D9C4863346D56615552422F393CE /* CCHMapClusterOperation.h */,
-				1899B31699F353A2AFB4F6E9E8627B50 /* CCHMapClusterOperation.m */,
-				E608376AA488F9D996BFDBD76C0D6490 /* CCHMapTree.h */,
-				168BA01355875E6C3D2DA58C2AC48A99 /* CCHMapTree.m */,
-				A22F5F373E798D5B452AE92823429B20 /* CCHMapTreeUtils.h */,
-				14CEEB91EE3D811E63DB9A0980FEAF33 /* CCHMapTreeUtils.m */,
-				D19BE8E9AFBCC339F9A90C338425A61E /* CCHMapViewDelegateProxy.h */,
-				5F8F877D4CFB42F6A1EF63D2EEA9D57E /* CCHMapViewDelegateProxy.m */,
-				62E6A38FA7238C4BC6DA47DF47304DE4 /* CCHNearCenterMapClusterer.h */,
-				CEEC8EEC11F6DA6DF61F6E8EFFE184C5 /* CCHNearCenterMapClusterer.m */,
-				9D6190794E1DA45797C444D5F5DBAC52 /* Support Files */,
-			);
-			path = CCHMapClusterController;
-			sourceTree = "<group>";
-		};
-		42FDADAC465D4CDD862DEAD884657757 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				35885CD0EA3EE5653D0CABB42D7DCE7E /* CoreLocation.framework */,
-				54B01B17E075B61AF4A8F5027949D9D6 /* Foundation.framework */,
-				D0534741771589234F6AB53258EFC6F1 /* MapKit.framework */,
-				C07501C09FB0D21C8F674510BD0E6171 /* QuartzCore.framework */,
-				C5CFC07648E8F559D0BA7C289E1624A7 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		5A9EB0C9880601D6F5773B4E27EF94AE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A4855A43D8FD51BDAA5A7820035AE34A /* Info.plist */,
-				C65C7833174E2EA1D288F35009245D1D /* MBPullDownController.modulemap */,
-				3E37BD5C0AC05B81F51E2768B79E8F21 /* MBPullDownController.xcconfig */,
-				8B54D43D1EAF7C7A3FE0FDB7D36EAD19 /* MBPullDownController-dummy.m */,
-				7C5FE21ECFFA982B717D4367F6D0F655 /* MBPullDownController-prefix.pch */,
-				5D5A3B9975557709A6C7B3B3757573F8 /* MBPullDownController-umbrella.h */,
+				DF748F63F38290490047909218B4275B /* Info.plist */,
+				CD281A5754D8CEBE19BEB19C42A5A46E /* MBPullDownController.modulemap */,
+				EC90B94629A8DA3306BAC15C216E753A /* MBPullDownController.xcconfig */,
+				D3A9D046ED2E238FA81E3F287EB0940B /* MBPullDownController-dummy.m */,
+				16A78C66B22FF2E80B4BD9C4CCEB0304 /* MBPullDownController-prefix.pch */,
+				DE8AF658443706FE346AC768200FC707 /* MBPullDownController-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MBPullDownController";
 			sourceTree = "<group>";
 		};
+		41637884D0A597CE23A0502FFE9E41BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20A9946BF600943609946104C0ED3980 /* CCHMapClusterController */,
+				C2C7D7E2C5093027D31647E2BD67A416 /* MBPullDownController */,
+				30C8CE4222EF0360EF817CBFEEFC8194 /* Whisper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				C27F640063D260A7EBCBD4A124104222 /* Pods */,
-				0C4D0D7E2A712590DED29E24BC5FE21B /* Products */,
+				41637884D0A597CE23A0502FFE9E41BE /* Pods */,
+				C0CE3E9CA78B3AE411C2F6E423BC309B /* Products */,
 				ABEFA88798A8FAE80D5017E8D7FD2807 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8F382EA3E7D567093F23FFF4DE0BD982 /* Support Files */ = {
+		7EFBC96866F6F407D47AA986F367A380 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5CC29A5DE4E3A3910897E5CCCFD416BC /* Info.plist */,
-				8018F506929851DB40B91357979FA7C7 /* Whisper.modulemap */,
-				72A09673560D7DE5CA579ED7D02060E9 /* Whisper.xcconfig */,
-				61BDA18B099DBC2B80AA2A9625ACDBCC /* Whisper-dummy.m */,
-				9158200201DBFDB38584F55C7B52292B /* Whisper-prefix.pch */,
-				3BAA44591F6D9949D9219500C70CF745 /* Whisper-umbrella.h */,
+				19CDE38E22503029E2C464B5BE279046 /* Info.plist */,
+				941C257C45083D3DCCF768F7CD5BF801 /* Whisper.modulemap */,
+				9EA2780865E1ABE24CC03E7204FA8456 /* Whisper.xcconfig */,
+				2E3E140453F6E01341A0F9B7BF09F0A7 /* Whisper-dummy.m */,
+				EE84582B0A7DBB2D090D58E51975CABC /* Whisper-prefix.pch */,
+				81A6E12ED4962CB09E8C723D2CC3AB43 /* Whisper-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Whisper";
 			sourceTree = "<group>";
 		};
-		9D6190794E1DA45797C444D5F5DBAC52 /* Support Files */ = {
+		A7AA6A308F847A62479C061CD741D5D7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				374043EBD6BD2C76E7248314AA344D11 /* CCHMapClusterController.modulemap */,
-				1011AF0233986C7F716CF6A38E082279 /* CCHMapClusterController.xcconfig */,
-				DCA8C1E876049E9ECFED86D14DD9314C /* CCHMapClusterController-dummy.m */,
-				B3456171734C122F53FB625AA5B9F6E8 /* CCHMapClusterController-prefix.pch */,
-				4792294A159D45CE17050589B751DAB2 /* CCHMapClusterController-umbrella.h */,
-				9DF61116BE0B14D8DCDADC7F2A2CD5F2 /* Info.plist */,
+				DBB8E1F6AE8E22F8B38744E9694B5BA8 /* CCHMapClusterController.modulemap */,
+				9C82CB75DFD3F5C513D59DAC43882A97 /* CCHMapClusterController.xcconfig */,
+				53321FC7E5DCC0B93B605762378B26D2 /* CCHMapClusterController-dummy.m */,
+				D916772CBAFA88A30BDD1E4A883494F1 /* CCHMapClusterController-prefix.pch */,
+				4D47705C345F6D1AE8206662156C8199 /* CCHMapClusterController-umbrella.h */,
+				D8201AFD1DE5E757613FC535EF08FC25 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CCHMapClusterController";
-			sourceTree = "<group>";
-		};
-		A9B1422033035F7EE643E474EAC136C1 /* Fabric */ = {
-			isa = PBXGroup;
-			children = (
-				FBF18AD5B08981F314458FA258E4552B /* Frameworks */,
-			);
-			path = Fabric;
 			sourceTree = "<group>";
 		};
 		ABEFA88798A8FAE80D5017E8D7FD2807 /* Targets Support Files */ = {
@@ -362,101 +351,100 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C27F640063D260A7EBCBD4A124104222 /* Pods */ = {
+		C0CE3E9CA78B3AE411C2F6E423BC309B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				31DD77218919E1D54F1AA7EF5E1BF8DD /* CCHMapClusterController */,
-				A9B1422033035F7EE643E474EAC136C1 /* Fabric */,
-				2D1F5ED0697F82D455B530561744DB59 /* MBPullDownController */,
-				D3EFF1DEB36E6C905A1E11DA13716788 /* Whisper */,
+				ACBA539A5F3D61368B20EA8FFF195EDF /* CCHMapClusterController.framework */,
+				CAD170560848B8567DEB6CFCB5EEDD10 /* MBPullDownController.framework */,
+				CFDB6CAA181007B65F23FA1C6D329471 /* Pods_Belgrade_City_Transport.framework */,
+				8A9FDE477F974E487B6F47C1EC9EFB8E /* Whisper.framework */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		D3EFF1DEB36E6C905A1E11DA13716788 /* Whisper */ = {
+		C2C7D7E2C5093027D31647E2BD67A416 /* MBPullDownController */ = {
 			isa = PBXGroup;
 			children = (
-				073918AE01190AA802992B36CDE6E552 /* ColorList.swift */,
-				2C46C8DF648C3B94B916229F8886E3BF /* Config.swift */,
-				7B20F6139FE5554A61BDABEABCFE2AEB /* FontList.swift */,
-				B0E33E6B996EBB6D78BCE4095B2FB056 /* Message.swift */,
-				5E9BEF7BFAF4550EBAAAE267E9200A93 /* ShoutFactory.swift */,
-				4CAA9E2D7F9C75378731DA837E1C2ED9 /* WhisperFactory.swift */,
-				5F5F6C1F9FE5AF9183C1B96E4CDBC941 /* WhisperView.swift */,
-				BBBD546F067A3837D220C63FD66A4896 /* WhistleFactory.swift */,
-				8F382EA3E7D567093F23FFF4DE0BD982 /* Support Files */,
+				296C08D365DD7BF9437D07AC37B6354E /* MBPullDownController.h */,
+				3914109E3BA4B7B1F17DDF6C0AEC2163 /* MBPullDownController.m */,
+				3D744AFEE8F50C9CB8C0BDC222412413 /* Support Files */,
 			);
-			path = Whisper;
+			name = MBPullDownController;
+			path = MBPullDownController;
 			sourceTree = "<group>";
 		};
-		FBF18AD5B08981F314458FA258E4552B /* Frameworks */ = {
+		CBBA553B47283D24029D54703D58AD4E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				9AC995F28E0BBC93EF59792D7469C986 /* Fabric.framework */,
+				CF10B3ABCDEA491D75EEC62A55807DB6 /* CoreLocation.framework */,
+				6DEE71F48E936D3EEF68066A037FB37F /* Foundation.framework */,
+				B85E1F0AA8F72327F143D346B583BF9E /* MapKit.framework */,
+				842A8DC289DE64053624332CA6D84988 /* QuartzCore.framework */,
+				CA3B49C089D61078F6D704ED3E05C18B /* UIKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		23D4375D6D7A2021B5C96A3FA210F89E /* Headers */ = {
+		00664DFA7251BB03390D8DF59B2BD592 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B842AC99D948C66D40B2446339C4DB9 /* Whisper-umbrella.h in Headers */,
+				137E755CF9B425304C9B1C457F12C248 /* Whisper-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32FC066F49D1ADF7197747EE5A81C2D1 /* Headers */ = {
+		39E2EEA29A5C5FD39430D99C884BAD13 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7AE08C794CB40F674003D100A38BC79 /* Pods-Belgrade City Transport-umbrella.h in Headers */,
+				5E40971FE5CA487475FCFB4B2AE8657F /* Pods-Belgrade City Transport-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6902C1ACFBD9D8E2EE76D76305BDECB3 /* Headers */ = {
+		759B83914B3BC75E0A879558D2A5333B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				762EA81FDDAFC38037873A3A2DA257D3 /* CCHCenterOfMassMapClusterer.h in Headers */,
-				30536225F1DD941F42DAEAC3388BF816 /* CCHFadeInOutMapAnimator.h in Headers */,
-				F5B01685FCAD818B4D87D04D9AAC2EAC /* CCHMapAnimator.h in Headers */,
-				EA14E77903BA2119E9AFFDCCF80C4E3B /* CCHMapClusterAnnotation.h in Headers */,
-				9CAF429EEA36BE37BF38A3FF4C5E40D2 /* CCHMapClusterController-umbrella.h in Headers */,
-				BE250474D5AE983BB48603CEB1C9B5B0 /* CCHMapClusterController.h in Headers */,
-				C5F3F4EE701C35175188296212FC9342 /* CCHMapClusterControllerDebugPolygon.h in Headers */,
-				4A8283BFE9AA4D3C3F18F1913F217E53 /* CCHMapClusterControllerDelegate.h in Headers */,
-				5293D59E1321453F0BC2BE248155F2BD /* CCHMapClusterControllerUtils.h in Headers */,
-				560BE9D9FEBECA2555121F06B3BE7093 /* CCHMapClusterer.h in Headers */,
-				DBECB0784F5BF12DA14EFCB168094450 /* CCHMapClusterOperation.h in Headers */,
-				E42C1DD6F6C0BE7582A370B19F1E9B65 /* CCHMapTree.h in Headers */,
-				B03C6ACC32956F9499C1D66490226B6B /* CCHMapTreeUtils.h in Headers */,
-				6B3600DC70E36674201EE3B8B8960735 /* CCHMapViewDelegateProxy.h in Headers */,
-				0E22EEC54AFB2C13FA6AB51CDC9261CA /* CCHNearCenterMapClusterer.h in Headers */,
+				0CDF03D4F8519557DF59AFA19B67A4C1 /* CCHCenterOfMassMapClusterer.h in Headers */,
+				ACFEC35BDAB79B1F94BF8AC1E28284E5 /* CCHFadeInOutMapAnimator.h in Headers */,
+				4A88051C73F5230012FC76CAA8772E38 /* CCHMapAnimator.h in Headers */,
+				4D18F5D1C3FAD3FF04D87E4F1FFA0C23 /* CCHMapClusterAnnotation.h in Headers */,
+				CF4601CA5E30CA091BF645886CBC92FB /* CCHMapClusterController-umbrella.h in Headers */,
+				3E78DF64CB65D42A76A8880DAC274989 /* CCHMapClusterController.h in Headers */,
+				369A344E6F11389827387B3AE9E9AE26 /* CCHMapClusterControllerDebugPolygon.h in Headers */,
+				6DF8DE8C45E0F2CDA7B4261EC7F21045 /* CCHMapClusterControllerDelegate.h in Headers */,
+				C2590078D7670EC6BEBE2780134F5B7B /* CCHMapClusterControllerUtils.h in Headers */,
+				48EAA0076AAF2427F395A06BFF49D373 /* CCHMapClusterer.h in Headers */,
+				1EB972CCAF5E07503E2E006BE1A8CA31 /* CCHMapClusterOperation.h in Headers */,
+				294ED98F16452AB240B5D1D5EBCC43E7 /* CCHMapTree.h in Headers */,
+				4315456843B12B1AA578D44A3CF2AC36 /* CCHMapTreeUtils.h in Headers */,
+				B90E246537003023305FEF7839975931 /* CCHMapViewDelegateProxy.h in Headers */,
+				9DAC9C19793066202BA2C7266C946434 /* CCHNearCenterMapClusterer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA7B86528DBDA47A11C297952999091A /* Headers */ = {
+		9B5037874781ABDF45C413290C6FEFDA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B72D9DDA856B129AD595AAEBEBB3E7D /* MBPullDownController-umbrella.h in Headers */,
-				603E6B9005ED343DC369193594A2390A /* MBPullDownController.h in Headers */,
+				1D1EE912F1351C340C5D536E9BAECA51 /* MBPullDownController-umbrella.h in Headers */,
+				961C57EE5D1B92799B81B3762F1FAC2B /* MBPullDownController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3BE5FD3DA02E5B9874000602317F08B5 /* MBPullDownController */ = {
+		4F0C29CFD553F79DF89F61587BBC17C2 /* MBPullDownController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 78A5CA313CD47FA1A4FA359BA6351041 /* Build configuration list for PBXNativeTarget "MBPullDownController" */;
+			buildConfigurationList = 132D309303FF6D54EF3598BDCF092137 /* Build configuration list for PBXNativeTarget "MBPullDownController" */;
 			buildPhases = (
-				52F76F7B9058B1B92DFEBCE403927275 /* Sources */,
-				1358829A42765EF9ADAAF5CDA9E372B8 /* Frameworks */,
-				CA7B86528DBDA47A11C297952999091A /* Headers */,
+				49CF9C7A0A5662D6E9B5C01499EB2AD8 /* Sources */,
+				2E5214DCAE66CFD13BF231BD353AE376 /* Frameworks */,
+				9B5037874781ABDF45C413290C6FEFDA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -464,53 +452,36 @@
 			);
 			name = MBPullDownController;
 			productName = MBPullDownController;
-			productReference = D9270AAF4D5D284B3690B0CDD635B4CE /* MBPullDownController.framework */;
+			productReference = CAD170560848B8567DEB6CFCB5EEDD10 /* MBPullDownController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7F29695FEB85230353422F3A670E5DB6 /* Pods-Belgrade City Transport */ = {
+		BCD024016515D90714A06C49E1F9EB8B /* Pods-Belgrade City Transport */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E5A7D2DF16C0E84F15EEA10DD9C6F91 /* Build configuration list for PBXNativeTarget "Pods-Belgrade City Transport" */;
+			buildConfigurationList = D6F3770629D7B04C43EB166A2EAA2BF6 /* Build configuration list for PBXNativeTarget "Pods-Belgrade City Transport" */;
 			buildPhases = (
-				2FA270F8B84BE2CA17E1576443FA7627 /* Sources */,
-				2E9AD810457F6993D699F79197371413 /* Frameworks */,
-				32FC066F49D1ADF7197747EE5A81C2D1 /* Headers */,
+				0520B905730DC5AD0BDD58B5F66E1F4D /* Sources */,
+				BB58CD8EACEDB4C0A4EF3B4EAE832C86 /* Frameworks */,
+				39E2EEA29A5C5FD39430D99C884BAD13 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				64FBA8180A340591C4CCCD9E8477E108 /* PBXTargetDependency */,
-				B0CBE638FE70881CE4D275E8AB95597D /* PBXTargetDependency */,
-				5F5A5E0BA25F29E55836F99222E3B596 /* PBXTargetDependency */,
+				266D4D0AF140F33DE0D67760E8512217 /* PBXTargetDependency */,
+				613A6A85DA6BBFC6D391C8E3865C38F7 /* PBXTargetDependency */,
+				12E3E126C71B12B6E615CE319D541FA8 /* PBXTargetDependency */,
 			);
 			name = "Pods-Belgrade City Transport";
 			productName = "Pods-Belgrade City Transport";
-			productReference = CD24FF0031953EAF2FDAF24CDABFEC00 /* Pods_Belgrade_City_Transport.framework */;
+			productReference = CFDB6CAA181007B65F23FA1C6D329471 /* Pods_Belgrade_City_Transport.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		89AD13529F3D133F1B9548298D3EE89E /* CCHMapClusterController */ = {
+		CB383A423A78A2B4904DE3381DAE0B4B /* Whisper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9010AA5C335E7039825C735F5769AB82 /* Build configuration list for PBXNativeTarget "CCHMapClusterController" */;
+			buildConfigurationList = 91F24AAF1BEE73616E28C3757550D061 /* Build configuration list for PBXNativeTarget "Whisper" */;
 			buildPhases = (
-				6920DC82BE2A28ABD384D9EA1ABBE14F /* Sources */,
-				9F3FB9C26E4986F88597B2A31144C5A5 /* Frameworks */,
-				6902C1ACFBD9D8E2EE76D76305BDECB3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CCHMapClusterController;
-			productName = CCHMapClusterController;
-			productReference = 62EAD309CC941C2DAE1F7467CCA49A3A /* CCHMapClusterController.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F79AE45BF375D76A77FC5903DC1ABBED /* Whisper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3FE67D408043A24B725A0DECD89092F9 /* Build configuration list for PBXNativeTarget "Whisper" */;
-			buildPhases = (
-				706AA6097888127411F6992EF305C891 /* Sources */,
-				312B3A7937DC4B2EA2D565E8B10B4BA2 /* Frameworks */,
-				23D4375D6D7A2021B5C96A3FA210F89E /* Headers */,
+				5632B1134F450DC2687CD92E02C2BD5C /* Sources */,
+				7536A41DF253D0A697FE2E454EACBB8D /* Frameworks */,
+				00664DFA7251BB03390D8DF59B2BD592 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -518,7 +489,24 @@
 			);
 			name = Whisper;
 			productName = Whisper;
-			productReference = AD61073325C3B2EDF124FD7C41AB6A6F /* Whisper.framework */;
+			productReference = 8A9FDE477F974E487B6F47C1EC9EFB8E /* Whisper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC6D72C4F604D7B6D1A2FC7F1CEDDC08 /* CCHMapClusterController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EFC7A776AAABC4FDB49D3D6B4BEA4A4 /* Build configuration list for PBXNativeTarget "CCHMapClusterController" */;
+			buildPhases = (
+				13B4E3FAD3B93DDE7F666855D18076E7 /* Sources */,
+				4368696AFFB93CF3FFEBA381390CEC02 /* Frameworks */,
+				759B83914B3BC75E0A879558D2A5333B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCHMapClusterController;
+			productName = CCHMapClusterController;
+			productReference = ACBA539A5F3D61368B20EA8FFF195EDF /* CCHMapClusterController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -527,7 +515,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -538,99 +526,298 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 0C4D0D7E2A712590DED29E24BC5FE21B /* Products */;
+			productRefGroup = C0CE3E9CA78B3AE411C2F6E423BC309B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				89AD13529F3D133F1B9548298D3EE89E /* CCHMapClusterController */,
-				3BE5FD3DA02E5B9874000602317F08B5 /* MBPullDownController */,
-				7F29695FEB85230353422F3A670E5DB6 /* Pods-Belgrade City Transport */,
-				F79AE45BF375D76A77FC5903DC1ABBED /* Whisper */,
+				DC6D72C4F604D7B6D1A2FC7F1CEDDC08 /* CCHMapClusterController */,
+				4F0C29CFD553F79DF89F61587BBC17C2 /* MBPullDownController */,
+				BCD024016515D90714A06C49E1F9EB8B /* Pods-Belgrade City Transport */,
+				CB383A423A78A2B4904DE3381DAE0B4B /* Whisper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2FA270F8B84BE2CA17E1576443FA7627 /* Sources */ = {
+		0520B905730DC5AD0BDD58B5F66E1F4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1386C3B65CDFCC76E9E09D5C501B80D9 /* Pods-Belgrade City Transport-dummy.m in Sources */,
+				D1E995DE8C23E784CAB62C0A798F176A /* Pods-Belgrade City Transport-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52F76F7B9058B1B92DFEBCE403927275 /* Sources */ = {
+		13B4E3FAD3B93DDE7F666855D18076E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9C2DE5206DB0BD149475076985F35E9 /* MBPullDownController-dummy.m in Sources */,
-				C0D6FEF5534416782B177CC92DE3CD54 /* MBPullDownController.m in Sources */,
+				4F51A013A67B00F3F02F55C5F0F8E6C8 /* CCHCenterOfMassMapClusterer.m in Sources */,
+				0E16C3407FF02F348440356F294C3C69 /* CCHFadeInOutMapAnimator.m in Sources */,
+				AE916C0E1D7C26F73924E63DF0EEE818 /* CCHMapClusterAnnotation.m in Sources */,
+				B4FFC012721F98A787D4A26DFBB46E7E /* CCHMapClusterController-dummy.m in Sources */,
+				191FEA8BB62E7D2B6FAADAAD7E912A04 /* CCHMapClusterController.m in Sources */,
+				230049C8DA772378A254D987D784BFCE /* CCHMapClusterControllerDebugPolygon.m in Sources */,
+				07021D9FE24586A397D407A3B018084F /* CCHMapClusterControllerUtils.m in Sources */,
+				B2B61EBC4E94DDF77EB443C376C44F9E /* CCHMapClusterOperation.m in Sources */,
+				1D3ABEF7F1CCE2768E13AE942580989A /* CCHMapTree.m in Sources */,
+				A6B34DF5271EA94A4435D969FF1EE130 /* CCHMapTreeUtils.m in Sources */,
+				0BA0F2E74A13ABD953FCBCF7304D7D78 /* CCHMapViewDelegateProxy.m in Sources */,
+				5494B3EEB493A21A22018F5A4EAD666F /* CCHNearCenterMapClusterer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6920DC82BE2A28ABD384D9EA1ABBE14F /* Sources */ = {
+		49CF9C7A0A5662D6E9B5C01499EB2AD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				381647580DCE9C43EE3B2D12194C841F /* CCHCenterOfMassMapClusterer.m in Sources */,
-				67A8286793564593FB15C4019D3DA3CD /* CCHFadeInOutMapAnimator.m in Sources */,
-				03940D311B82610F5BF89800FD6249D4 /* CCHMapClusterAnnotation.m in Sources */,
-				6BE4952C042928CB59DCA47027647ED2 /* CCHMapClusterController-dummy.m in Sources */,
-				AFFDB389C4CBF27179061BBBD7302DC4 /* CCHMapClusterController.m in Sources */,
-				3828AB2E02DCB6339D2207BC4BDD9A64 /* CCHMapClusterControllerDebugPolygon.m in Sources */,
-				9B89A3BCAF235ADC9539DF80B99A4A27 /* CCHMapClusterControllerUtils.m in Sources */,
-				EC0129C6E6E4F360C6D846DA88E59C1A /* CCHMapClusterOperation.m in Sources */,
-				7FC318427F0000C36D8B4F3B115FF5EE /* CCHMapTree.m in Sources */,
-				C476633889E594F1D5705607E237F5FA /* CCHMapTreeUtils.m in Sources */,
-				6EDDA9EC4C3CA84D4A6BEC8FAC295383 /* CCHMapViewDelegateProxy.m in Sources */,
-				BEB30F55BF75CBBA21C853409377B8E5 /* CCHNearCenterMapClusterer.m in Sources */,
+				C2174AE6681EEDE41566C1EEAA6582FE /* MBPullDownController-dummy.m in Sources */,
+				1A0275B3C99F827B0C483511262D5B29 /* MBPullDownController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		706AA6097888127411F6992EF305C891 /* Sources */ = {
+		5632B1134F450DC2687CD92E02C2BD5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6685497F304B6D8A0E81360D15EC6EB /* ColorList.swift in Sources */,
-				64CBCD6C7D5AA8509DFCCC1BDC3DDAD4 /* Config.swift in Sources */,
-				A8E48F2C6DDD0762631F68A7BBFF8A8C /* FontList.swift in Sources */,
-				C9F474D630DF0BFF8AA30E7D733AE803 /* Message.swift in Sources */,
-				8464B2783FC7A013C7735507C25583A1 /* ShoutFactory.swift in Sources */,
-				0ED1382F5FCB145782B10057499C1933 /* Whisper-dummy.m in Sources */,
-				5CF65B79D28CA36E8800DB1FEE7601B6 /* WhisperFactory.swift in Sources */,
-				BAE43727321A64502E836148F1A3AF70 /* WhisperView.swift in Sources */,
-				00DAC1FF904B78848466B973DF66F86F /* WhistleFactory.swift in Sources */,
+				9F6438224715BC748314ECEC31503D6D /* ColorList.swift in Sources */,
+				B64E5DDE3CF27E8B78273ADC2C261D61 /* Config.swift in Sources */,
+				BB166DE8F476C6C5C4A66E2EC2675AA7 /* FontList.swift in Sources */,
+				B81BF78566597D54E0BF5277ACBCFAC7 /* Message.swift in Sources */,
+				70A4BE01DAAAE0F09695A87CFAE8F28E /* ShoutFactory.swift in Sources */,
+				B7844609174B1826CC89C758EADC1294 /* Showing.swift in Sources */,
+				919DDDD5C0BCA8A7C33FB51ADD7B0C8C /* Whisper-dummy.m in Sources */,
+				D8030E64A00EBCC3335469E91090FB4B /* WhisperFactory.swift in Sources */,
+				D810AA21986DDB3056BF4ED09F488CFB /* WhisperView.swift in Sources */,
+				7F1E95A31F1F241DCC5D86F868A92903 /* WhistleFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5F5A5E0BA25F29E55836F99222E3B596 /* PBXTargetDependency */ = {
+		12E3E126C71B12B6E615CE319D541FA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Whisper;
-			target = F79AE45BF375D76A77FC5903DC1ABBED /* Whisper */;
-			targetProxy = 464BB807AF8BA43FCB2B06A4EE574A65 /* PBXContainerItemProxy */;
+			target = CB383A423A78A2B4904DE3381DAE0B4B /* Whisper */;
+			targetProxy = 78C4E41853925DC96E7578B9F016358E /* PBXContainerItemProxy */;
 		};
-		64FBA8180A340591C4CCCD9E8477E108 /* PBXTargetDependency */ = {
+		266D4D0AF140F33DE0D67760E8512217 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CCHMapClusterController;
-			target = 89AD13529F3D133F1B9548298D3EE89E /* CCHMapClusterController */;
-			targetProxy = E51A7F718FF6352AB31F6723F0BF15D7 /* PBXContainerItemProxy */;
+			target = DC6D72C4F604D7B6D1A2FC7F1CEDDC08 /* CCHMapClusterController */;
+			targetProxy = 37A406911FF004DAEC9D0F8E93849CEB /* PBXContainerItemProxy */;
 		};
-		B0CBE638FE70881CE4D275E8AB95597D /* PBXTargetDependency */ = {
+		613A6A85DA6BBFC6D391C8E3865C38F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBPullDownController;
-			target = 3BE5FD3DA02E5B9874000602317F08B5 /* MBPullDownController */;
-			targetProxy = 5B6C4E1FFD6CBA3F6D9B96439D5A7DA8 /* PBXContainerItemProxy */;
+			target = 4F0C29CFD553F79DF89F61587BBC17C2 /* MBPullDownController */;
+			targetProxy = F413BDBD9D4CF6B25481857776FB8ED0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+		045D73FCA4CC3B4FBFBB8CF91027FF3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C82CB75DFD3F5C513D59DAC43882A97 /* CCHMapClusterController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CCHMapClusterController/CCHMapClusterController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CCHMapClusterController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CCHMapClusterController/CCHMapClusterController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CCHMapClusterController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2874A12CC1AA6AD234021F303F56D855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C82CB75DFD3F5C513D59DAC43882A97 /* CCHMapClusterController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CCHMapClusterController/CCHMapClusterController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CCHMapClusterController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CCHMapClusterController/CCHMapClusterController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CCHMapClusterController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		32E20508E71FB6E8C2F43DAB9D20E8D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EA2780865E1ABE24CC03E7204FA8456 /* Whisper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Whisper/Whisper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Whisper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Whisper/Whisper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Whisper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		379D6EDA5B87F393796982A35E404512 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFAD95BDBCFD3A53918B289DE6CCED16 /* Pods-Belgrade City Transport.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Belgrade City Transport/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Belgrade_City_Transport;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4EC8222E2E534C63E7D93F80D3BD2256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC90B94629A8DA3306BAC15C216E753A /* MBPullDownController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBPullDownController/MBPullDownController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBPullDownController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBPullDownController/MBPullDownController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MBPullDownController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5330F0AF266F5A4DBDB6AFD2188A841D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC90B94629A8DA3306BAC15C216E753A /* MBPullDownController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBPullDownController/MBPullDownController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBPullDownController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBPullDownController/MBPullDownController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MBPullDownController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -644,10 +831,14 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -655,100 +846,18 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		3D159E4E66DD0339191D26F5FB4DBA2B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1011AF0233986C7F716CF6A38E082279 /* CCHMapClusterController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CCHMapClusterController/CCHMapClusterController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CCHMapClusterController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CCHMapClusterController/CCHMapClusterController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = CCHMapClusterController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4A1FD376429AFF1F9A3828F43FE97BC8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E37BD5C0AC05B81F51E2768B79E8F21 /* MBPullDownController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MBPullDownController/MBPullDownController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBPullDownController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MBPullDownController/MBPullDownController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MBPullDownController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		53581C7861929384D9EBE40F0EB3927A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C73640607646F727E67D82AE1CF8DE42 /* Pods-Belgrade City Transport.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Belgrade City Transport/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Belgrade_City_Transport;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -762,11 +871,14 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -779,85 +891,71 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		80F99CA1B4BB39066010730F7E6D1965 /* Debug */ = {
+		DFCE74E6408DB29397F97767C07BF511 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E37BD5C0AC05B81F51E2768B79E8F21 /* MBPullDownController.xcconfig */;
+			baseConfigurationReference = 9EA2780865E1ABE24CC03E7204FA8456 /* Whisper.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MBPullDownController/MBPullDownController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBPullDownController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MBPullDownController/MBPullDownController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MBPullDownController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9977344EF8AAD91EBCE2CF9B1EFB85A1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72A09673560D7DE5CA579ED7D02060E9 /* Whisper.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Whisper/Whisper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Whisper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Whisper/Whisper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Whisper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A1CF0B7C17C2602A0F2F9515FA18283F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72A09673560D7DE5CA579ED7D02060E9 /* Whisper.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Whisper/Whisper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Whisper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Whisper/Whisper.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = Whisper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED4A5E314F78C88B48C2E9F32635E8F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C73640607646F727E67D82AE1CF8DE42 /* Pods-Belgrade City Transport.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Belgrade City Transport/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Belgrade_City_Transport;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -866,108 +964,50 @@
 			};
 			name = Release;
 		};
-		CD14C361E9E8ABE49DBE5C70ACC79DAE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1011AF0233986C7F716CF6A38E082279 /* CCHMapClusterController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CCHMapClusterController/CCHMapClusterController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CCHMapClusterController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CCHMapClusterController/CCHMapClusterController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = CCHMapClusterController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D3AC9156243ED0B4F068B9CF64A0EEDE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFAD95BDBCFD3A53918B289DE6CCED16 /* Pods-Belgrade City Transport.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Belgrade City Transport/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Belgrade_City_Transport;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		132D309303FF6D54EF3598BDCF092137 /* Build configuration list for PBXNativeTarget "MBPullDownController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC8222E2E534C63E7D93F80D3BD2256 /* Debug */,
+				5330F0AF266F5A4DBDB6AFD2188A841D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FE67D408043A24B725A0DECD89092F9 /* Build configuration list for PBXNativeTarget "Whisper" */ = {
+		5EFC7A776AAABC4FDB49D3D6B4BEA4A4 /* Build configuration list for PBXNativeTarget "CCHMapClusterController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9977344EF8AAD91EBCE2CF9B1EFB85A1 /* Debug */,
-				A1CF0B7C17C2602A0F2F9515FA18283F /* Release */,
+				2874A12CC1AA6AD234021F303F56D855 /* Debug */,
+				045D73FCA4CC3B4FBFBB8CF91027FF3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		78A5CA313CD47FA1A4FA359BA6351041 /* Build configuration list for PBXNativeTarget "MBPullDownController" */ = {
+		91F24AAF1BEE73616E28C3757550D061 /* Build configuration list for PBXNativeTarget "Whisper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				80F99CA1B4BB39066010730F7E6D1965 /* Debug */,
-				4A1FD376429AFF1F9A3828F43FE97BC8 /* Release */,
+				32E20508E71FB6E8C2F43DAB9D20E8D6 /* Debug */,
+				DFCE74E6408DB29397F97767C07BF511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E5A7D2DF16C0E84F15EEA10DD9C6F91 /* Build configuration list for PBXNativeTarget "Pods-Belgrade City Transport" */ = {
+		D6F3770629D7B04C43EB166A2EAA2BF6 /* Build configuration list for PBXNativeTarget "Pods-Belgrade City Transport" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3AC9156243ED0B4F068B9CF64A0EEDE /* Debug */,
-				53581C7861929384D9EBE40F0EB3927A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9010AA5C335E7039825C735F5769AB82 /* Build configuration list for PBXNativeTarget "CCHMapClusterController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CD14C361E9E8ABE49DBE5C70ACC79DAE /* Debug */,
-				3D159E4E66DD0339191D26F5FB4DBA2B /* Release */,
+				379D6EDA5B87F393796982A35E404512 /* Debug */,
+				ED4A5E314F78C88B48C2E9F32635E8F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

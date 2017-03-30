@@ -13,8 +13,6 @@
 #import "GSPStop.h"
 #import "DataStore.h"
 #import "DataManager.h"
-#import <Fabric/Fabric.h>
-#import <Crashlytics/Crashlytics.h>
 
 @interface AppDelegate () <UIApplicationDelegate, UITabBarControllerDelegate>
 
@@ -25,8 +23,6 @@
 #pragma mark - Application Lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Fabric with:@[[Crashlytics class]]];
-
     Settings *_settings = [Settings sharedInstance];
     [_settings load];
 

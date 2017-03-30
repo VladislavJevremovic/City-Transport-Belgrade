@@ -55,7 +55,7 @@
 }
 
 - (void)dealloc {
-    _mapView.delegate = self;
+    _mapView.delegate = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated {

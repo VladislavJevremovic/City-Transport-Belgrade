@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FC80BD4F886CF5C2BB2B6B1 /* Pods_Belgrade_City_Transport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CCE2FDF74A020C0D76FF128 /* Pods_Belgrade_City_Transport.framework */; };
 		8602D71A1AB9EE5100A46247 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8602D7191AB9EE5100A46247 /* NSString+Utility.m */; };
 		860A4EC71AB6CA5E00FC2A09 /* TimeTableWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 860A4EC61AB6CA5E00FC2A09 /* TimeTableWebViewController.m */; };
 		861F247B1863937B00FB8883 /* Acknowledgements.html in Resources */ = {isa = PBXBuildFile; fileRef = 861F247A1863937B00FB8883 /* Acknowledgements.html */; };
@@ -54,11 +53,11 @@
 		86E266FF191C18F4000A5D58 /* MKMapView+Zoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E266FE191C18F4000A5D58 /* MKMapView+Zoom.m */; };
 		86EC1EBD184B3423003B4A56 /* DataModel.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 86EC1EBC184B3423003B4A56 /* DataModel.sqlite */; };
 		86FF98AD1C5E8371008FF3D7 /* WhisperBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF98AC1C5E8371008FF3D7 /* WhisperBridge.swift */; };
-		86FF98B01C5E8AEF008FF3D7 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FF98AF1C5E8AEF008FF3D7 /* Crashlytics.framework */; };
+		FD99C35BBFBC284C96F146A4 /* Pods_Belgrade_City_Transport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6353D8E353D1848DE1E240F6 /* Pods_Belgrade_City_Transport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5CCE2FDF74A020C0D76FF128 /* Pods_Belgrade_City_Transport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Belgrade_City_Transport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6353D8E353D1848DE1E240F6 /* Pods_Belgrade_City_Transport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Belgrade_City_Transport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8602D7181AB9EE5100A46247 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
 		8602D7191AB9EE5100A46247 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
 		860A4EC51AB6CA5E00FC2A09 /* TimeTableWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableWebViewController.h; sourceTree = "<group>"; };
@@ -136,9 +135,8 @@
 		86EC1EBC184B3423003B4A56 /* DataModel.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DataModel.sqlite; sourceTree = "<group>"; };
 		86FF98AB1C5E8371008FF3D7 /* Belgrade_City_Transport-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Belgrade_City_Transport-Bridging-Header.h"; sourceTree = "<group>"; };
 		86FF98AC1C5E8371008FF3D7 /* WhisperBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhisperBridge.swift; sourceTree = "<group>"; };
-		86FF98AF1C5E8AEF008FF3D7 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		B8D14D5100693E5E18AB5743 /* Pods-Belgrade City Transport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Belgrade City Transport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport.debug.xcconfig"; sourceTree = "<group>"; };
-		D15D3F4DDA16768F61ED5F28 /* Pods-Belgrade City Transport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Belgrade City Transport.release.xcconfig"; path = "Pods/Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport.release.xcconfig"; sourceTree = "<group>"; };
+		95EC2C62658BBD5D7202BD63 /* Pods-Belgrade City Transport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Belgrade City Transport.release.xcconfig"; path = "Pods/Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport.release.xcconfig"; sourceTree = "<group>"; };
+		C72A805A82F27C6ED4024D7E /* Pods-Belgrade City Transport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Belgrade City Transport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,25 +146,33 @@
 			files = (
 				86C26E981AC28CC90054551E /* CoreImage.framework in Frameworks */,
 				86C26E951AC28CBF0054551E /* QuartzCore.framework in Frameworks */,
-				86FF98B01C5E8AEF008FF3D7 /* Crashlytics.framework in Frameworks */,
 				8693E3C318F0142500E2050E /* MapKit.framework in Frameworks */,
 				86512671181AD9CB002E3F04 /* CoreGraphics.framework in Frameworks */,
 				86512673181AD9CB002E3F04 /* UIKit.framework in Frameworks */,
 				8651266F181AD9CB002E3F04 /* Foundation.framework in Frameworks */,
-				3FC80BD4F886CF5C2BB2B6B1 /* Pods_Belgrade_City_Transport.framework in Frameworks */,
+				FD99C35BBFBC284C96F146A4 /* Pods_Belgrade_City_Transport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EE4AEB893E19A397308B270 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C72A805A82F27C6ED4024D7E /* Pods-Belgrade City Transport.debug.xcconfig */,
+				95EC2C62658BBD5D7202BD63 /* Pods-Belgrade City Transport.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		86512662181AD9CB002E3F04 = {
 			isa = PBXGroup;
 			children = (
 				8651266D181AD9CB002E3F04 /* Frameworks */,
 				86512674181AD9CB002E3F04 /* BelgradeCityTransport */,
 				8651266C181AD9CB002E3F04 /* Products */,
-				9792CA69CAA5C3D8F1003C00 /* Pods */,
+				6EE4AEB893E19A397308B270 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,14 +187,13 @@
 		8651266D181AD9CB002E3F04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				86FF98AF1C5E8AEF008FF3D7 /* Crashlytics.framework */,
 				86C26E971AC28CC90054551E /* CoreImage.framework */,
 				86C26E941AC28CBF0054551E /* QuartzCore.framework */,
 				8693E3C218F0142500E2050E /* MapKit.framework */,
 				8651266E181AD9CB002E3F04 /* Foundation.framework */,
 				86512670181AD9CB002E3F04 /* CoreGraphics.framework */,
 				86512672181AD9CB002E3F04 /* UIKit.framework */,
-				5CCE2FDF74A020C0D76FF128 /* Pods_Belgrade_City_Transport.framework */,
+				6353D8E353D1848DE1E240F6 /* Pods_Belgrade_City_Transport.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 		865126BC181ADD61002E3F04 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				86FF98AB1C5E8371008FF3D7 /* Belgrade_City_Transport-Bridging-Header.h */,
 				86DB11B118242CCA006419F1 /* DataManager.h */,
 				86DB11B218242CCA006419F1 /* DataManager.m */,
 				86B94382183A626D00409066 /* DataStore.h */,
@@ -272,7 +278,6 @@
 				865126D4181ADD61002E3F04 /* Settings.h */,
 				865126D5181ADD61002E3F04 /* Settings.m */,
 				86FF98AC1C5E8371008FF3D7 /* WhisperBridge.swift */,
-				86FF98AB1C5E8371008FF3D7 /* Belgrade_City_Transport-Bridging-Header.h */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -374,15 +379,6 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		9792CA69CAA5C3D8F1003C00 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B8D14D5100693E5E18AB5743 /* Pods-Belgrade City Transport.debug.xcconfig */,
-				D15D3F4DDA16768F61ED5F28 /* Pods-Belgrade City Transport.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -390,13 +386,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 865126A0181AD9CB002E3F04 /* Build configuration list for PBXNativeTarget "Belgrade City Transport" */;
 			buildPhases = (
-				29735B3898C9133EC044FBB3 /* Check Pods Manifest.lock */,
+				D0117D53842B40DD51D58864 /* [CP] Check Pods Manifest.lock */,
 				86512667181AD9CB002E3F04 /* Sources */,
 				86512668181AD9CB002E3F04 /* Frameworks */,
 				86512669181AD9CB002E3F04 /* Resources */,
-				FA8681913FCE0B7122B28FC1 /* Embed Pods Frameworks */,
-				D64B0873D426B18CF362D06D /* Copy Pods Resources */,
-				86FF98AE1C5E8AA3008FF3D7 /* ShellScript */,
+				5EEDFAF0BC7748F64516287E /* [CP] Embed Pods Frameworks */,
+				17D24C396F8D653E18620196 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -418,7 +413,7 @@
 				ORGANIZATIONNAME = "Vladislav Jevremovic";
 				TargetAttributes = {
 					8651266A181AD9CB002E3F04 = {
-						DevelopmentTeam = N7WY9A98PA;
+						LastSwiftMigration = 0830;
 						SystemCapabilities = {
 							com.apple.DataProtection = {
 								enabled = 1;
@@ -472,42 +467,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		29735B3898C9133EC044FBB3 /* Check Pods Manifest.lock */ = {
+		17D24C396F8D653E18620196 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		86FF98AE1C5E8AA3008FF3D7 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 994e8505ab1a174366b5ed058f6010c69e907dc5 9b0b8697eac6a87b30c5595ec6d632f27613d5fe3e73ddc90a674cbda03bdaf6";
-		};
-		D64B0873D426B18CF362D06D /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,19 +482,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FA8681913FCE0B7122B28FC1 /* Embed Pods Frameworks */ = {
+		5EEDFAF0BC7748F64516287E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0117D53842B40DD51D58864 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -695,7 +677,7 @@
 		};
 		865126A1181AD9CB002E3F04 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8D14D5100693E5E18AB5743 /* Pods-Belgrade City Transport.debug.xcconfig */;
+			baseConfigurationReference = C72A805A82F27C6ED4024D7E /* Pods-Belgrade City Transport.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -710,6 +692,7 @@
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -736,6 +719,7 @@
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "BelgradeCityTransport/Logic/Belgrade_City_Transport-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 arm64 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -744,7 +728,7 @@
 		};
 		865126A2181AD9CB002E3F04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D15D3F4DDA16768F61ED5F28 /* Pods-Belgrade City Transport.release.xcconfig */;
+			baseConfigurationReference = 95EC2C62658BBD5D7202BD63 /* Pods-Belgrade City Transport.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -759,6 +743,7 @@
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -784,6 +769,7 @@
 				PROVISIONING_PROFILE = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "BelgradeCityTransport/Logic/Belgrade_City_Transport-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 arm64 armv7s";
 				WRAPPER_EXTENSION = app;
