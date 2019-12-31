@@ -162,22 +162,22 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
         return;
     }
 
-    UIColor *whisperBackgroundColor = nil;
-    if (isError) {
-        whisperBackgroundColor = [UIColor colorWithRed:1.0f green:59.0f / 255.0f blue:48.0f / 255.0f alpha:0.7f];
-    } else {
-        whisperBackgroundColor = [UIColor colorWithRed:0.0f green:122.0f / 255.0f blue:1.0f alpha:0.7f];
-    }
-
-    [WhisperBridge whisper:text
-                 textColor:[UIColor whiteColor]
-           backgroundColor:whisperBackgroundColor
-    toNavigationController:self.navigationController];
+//    UIColor *whisperBackgroundColor = nil;
+//    if (isError) {
+//        whisperBackgroundColor = [UIColor colorWithRed:1.0f green:59.0f / 255.0f blue:48.0f / 255.0f alpha:0.7f];
+//    } else {
+//        whisperBackgroundColor = [UIColor colorWithRed:0.0f green:122.0f / 255.0f blue:1.0f alpha:0.7f];
+//    }
+//
+//    [WhisperBridge whisper:text
+//                 textColor:[UIColor whiteColor]
+//           backgroundColor:whisperBackgroundColor
+//    toNavigationController:self.navigationController];
 }
 
 - (void)hideInfoLabel {
-    [WhisperBridge silent:self.navigationController
-             silenceAfter:kDropDownHideTime];
+//    [WhisperBridge silent:self.navigationController
+//             silenceAfter:kDropDownHideTime];
 }
 
 - (IBAction)tappedLocateMe:(id)sender {

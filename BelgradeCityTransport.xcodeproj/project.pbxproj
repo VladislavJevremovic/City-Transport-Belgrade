@@ -52,12 +52,9 @@
 		86DB11B318242CCA006419F1 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB11B218242CCA006419F1 /* DataManager.m */; };
 		86E266FF191C18F4000A5D58 /* MKMapView+Zoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E266FE191C18F4000A5D58 /* MKMapView+Zoom.m */; };
 		86EC1EBD184B3423003B4A56 /* DataModel.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 86EC1EBC184B3423003B4A56 /* DataModel.sqlite */; };
-		86FF98AD1C5E8371008FF3D7 /* WhisperBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF98AC1C5E8371008FF3D7 /* WhisperBridge.swift */; };
-		FD99C35BBFBC284C96F146A4 /* Pods_Belgrade_City_Transport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6353D8E353D1848DE1E240F6 /* Pods_Belgrade_City_Transport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6353D8E353D1848DE1E240F6 /* Pods_Belgrade_City_Transport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Belgrade_City_Transport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8602D7181AB9EE5100A46247 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
 		8602D7191AB9EE5100A46247 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
 		860A4EC51AB6CA5E00FC2A09 /* TimeTableWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableWebViewController.h; sourceTree = "<group>"; };
@@ -133,10 +130,6 @@
 		86E266FD191C18F4000A5D58 /* MKMapView+Zoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Zoom.h"; sourceTree = "<group>"; };
 		86E266FE191C18F4000A5D58 /* MKMapView+Zoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Zoom.m"; sourceTree = "<group>"; };
 		86EC1EBC184B3423003B4A56 /* DataModel.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DataModel.sqlite; sourceTree = "<group>"; };
-		86FF98AB1C5E8371008FF3D7 /* Belgrade_City_Transport-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Belgrade_City_Transport-Bridging-Header.h"; sourceTree = "<group>"; };
-		86FF98AC1C5E8371008FF3D7 /* WhisperBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhisperBridge.swift; sourceTree = "<group>"; };
-		95EC2C62658BBD5D7202BD63 /* Pods-Belgrade City Transport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Belgrade City Transport.release.xcconfig"; path = "Pods/Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport.release.xcconfig"; sourceTree = "<group>"; };
-		C72A805A82F27C6ED4024D7E /* Pods-Belgrade City Transport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Belgrade City Transport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,29 +143,18 @@
 				86512671181AD9CB002E3F04 /* CoreGraphics.framework in Frameworks */,
 				86512673181AD9CB002E3F04 /* UIKit.framework in Frameworks */,
 				8651266F181AD9CB002E3F04 /* Foundation.framework in Frameworks */,
-				FD99C35BBFBC284C96F146A4 /* Pods_Belgrade_City_Transport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6EE4AEB893E19A397308B270 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C72A805A82F27C6ED4024D7E /* Pods-Belgrade City Transport.debug.xcconfig */,
-				95EC2C62658BBD5D7202BD63 /* Pods-Belgrade City Transport.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		86512662181AD9CB002E3F04 = {
 			isa = PBXGroup;
 			children = (
 				8651266D181AD9CB002E3F04 /* Frameworks */,
 				86512674181AD9CB002E3F04 /* BelgradeCityTransport */,
 				8651266C181AD9CB002E3F04 /* Products */,
-				6EE4AEB893E19A397308B270 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,7 +175,6 @@
 				8651266E181AD9CB002E3F04 /* Foundation.framework */,
 				86512670181AD9CB002E3F04 /* CoreGraphics.framework */,
 				86512672181AD9CB002E3F04 /* UIKit.framework */,
-				6353D8E353D1848DE1E240F6 /* Pods_Belgrade_City_Transport.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -268,7 +249,6 @@
 		865126BC181ADD61002E3F04 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				86FF98AB1C5E8371008FF3D7 /* Belgrade_City_Transport-Bridging-Header.h */,
 				86DB11B118242CCA006419F1 /* DataManager.h */,
 				86DB11B218242CCA006419F1 /* DataManager.m */,
 				86B94382183A626D00409066 /* DataStore.h */,
@@ -277,7 +257,6 @@
 				86C5FBC4181CE68500C0C726 /* DrawingHelper.m */,
 				865126D4181ADD61002E3F04 /* Settings.h */,
 				865126D5181ADD61002E3F04 /* Settings.m */,
-				86FF98AC1C5E8371008FF3D7 /* WhisperBridge.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -386,12 +365,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 865126A0181AD9CB002E3F04 /* Build configuration list for PBXNativeTarget "Belgrade City Transport" */;
 			buildPhases = (
-				D0117D53842B40DD51D58864 /* [CP] Check Pods Manifest.lock */,
 				86512667181AD9CB002E3F04 /* Sources */,
 				86512668181AD9CB002E3F04 /* Frameworks */,
 				86512669181AD9CB002E3F04 /* Resources */,
-				5EEDFAF0BC7748F64516287E /* [CP] Embed Pods Frameworks */,
-				17D24C396F8D653E18620196 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -409,7 +385,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Vladislav Jevremovic";
 				TargetAttributes = {
 					8651266A181AD9CB002E3F04 = {
@@ -427,7 +403,7 @@
 			};
 			buildConfigurationList = 86512666181AD9CB002E3F04 /* Build configuration list for PBXProject "BelgradeCityTransport" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -466,54 +442,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		17D24C396F8D653E18620196 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5EEDFAF0BC7748F64516287E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Belgrade City Transport/Pods-Belgrade City Transport-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D0117D53842B40DD51D58864 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		86512667181AD9CB002E3F04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -528,7 +456,6 @@
 				86512715181ADD62002E3F04 /* FavoriteStopsViewController.m in Sources */,
 				86512762181AE504002E3F04 /* GSPStop.m in Sources */,
 				86C5FBBE181C2B8F00C0C726 /* DetailTableViewController.m in Sources */,
-				86FF98AD1C5E8371008FF3D7 /* WhisperBridge.swift in Sources */,
 				86DB11B318242CCA006419F1 /* DataManager.m in Sources */,
 				86512718181ADD62002E3F04 /* MapViewController.m in Sources */,
 				86512717181ADD62002E3F04 /* InfoViewController.m in Sources */,
@@ -608,23 +535,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -647,22 +588,36 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -671,13 +626,13 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		865126A1181AD9CB002E3F04 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C72A805A82F27C6ED4024D7E /* Pods-Belgrade City Transport.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -728,7 +683,6 @@
 		};
 		865126A2181AD9CB002E3F04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95EC2C62658BBD5D7202BD63 /* Pods-Belgrade City Transport.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
