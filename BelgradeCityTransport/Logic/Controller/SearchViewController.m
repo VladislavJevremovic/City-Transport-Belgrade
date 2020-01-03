@@ -17,7 +17,7 @@
 
 #define CellIdentifier @"SelectionCell"
 
-@interface SearchViewController () <NSFetchedResultsControllerDelegate, UISearchBarDelegate, UISearchDisplayDelegate> {
+@interface SearchViewController () <NSFetchedResultsControllerDelegate, UISearchBarDelegate, UISearchControllerDelegate> {
     UITableView *currentTableView;
 
     DisplayMode displayMode;
@@ -58,9 +58,9 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
     // prevent crash upon return
-    self.searchDisplayController.delegate = nil;
-    self.searchDisplayController.searchResultsDelegate = nil;
-    self.searchDisplayController.searchResultsDataSource = nil;
+//    self.searchDisplayController.delegate = nil;
+//    self.searchDisplayController.searchResultsDelegate = nil;
+//    self.searchDisplayController.searchResultsDataSource = nil;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -72,16 +72,16 @@
 #pragma mark - Private Methods
 
 - (void)adjustInterfaceBasedOnSearchMode {
-    if (displayMode == DisplayMode_Stops) {
-        self.title = NSLocalizedString(@"tbStopsTitle", nil);
-        self.searchDisplayController.searchBar.placeholder = NSLocalizedString(@"searchStopsPlaceholderText", nil);
-    }
-    else if (displayMode == DisplayMode_Lines) {
-        self.title = NSLocalizedString(@"tbLinesTitle", nil);
-        self.searchDisplayController.searchBar.placeholder = NSLocalizedString(@"searchLinesPlaceholderText", nil);
-    }
-
-    self.searchDisplayController.searchBar.keyboardType = UIKeyboardTypeNumberPad;
+//    if (displayMode == DisplayMode_Stops) {
+//        self.title = NSLocalizedString(@"tbStopsTitle", nil);
+//        self.searchDisplayController.searchBar.placeholder = NSLocalizedString(@"searchStopsPlaceholderText", nil);
+//    }
+//    else if (displayMode == DisplayMode_Lines) {
+//        self.title = NSLocalizedString(@"tbLinesTitle", nil);
+//        self.searchDisplayController.searchBar.placeholder = NSLocalizedString(@"searchLinesPlaceholderText", nil);
+//    }
+//
+//    self.searchDisplayController.searchBar.keyboardType = UIKeyboardTypeNumberPad;
 }
 
 #pragma mark - UITableViewDataSource
@@ -286,46 +286,46 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 
 #pragma mark - UISearchDisplayDelegate methods
 
-- (void)searchDisplayController:(UISearchDisplayController *)controller didLoadSearchResultsTableView:(UITableView *)tableView {
-    [tableView registerClass:[SubtitleCell class] forCellReuseIdentifier:CellIdentifier];
-}
-
-- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
-    return [self shouldReloadTableForSearchString:searchString];
-}
-
-- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption {
-    NSString *searchString = controller.searchBar.text;
-    return [self shouldReloadTableForSearchString:searchString];
-}
-
-- (void)searchDisplayController:(UISearchDisplayController *)controller willUnloadSearchResultsTableView:(UITableView *)tableView; {
-    currentTableView = self.tableView;
-    [self performFetch];
-}
-
-- (void)searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller {
-    currentTableView = self.tableView;
-    [self performFetch];
-}
-
-- (BOOL)shouldReloadTableForSearchString:(NSString *)searchString {
-    currentTableView = self.searchDisplayController.searchResultsTableView;
-
-    if (displayMode == DisplayMode_Lines) {
-        NSPredicate *predicate = [searchString length] > 0 ? [NSPredicate predicateWithFormat:@"name beginsWith[cd] %@ AND active = %@", searchString, @YES] : [NSPredicate predicateWithFormat:@"active = %@", @YES];
-        [self.searchFetchRequestLines setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(localizedStandardCompare:)], [NSSortDescriptor sortDescriptorWithKey:@"direction" ascending:YES selector:@selector(localizedStandardCompare:)]]];
-        [self.searchFetchRequestLines setPredicate:predicate];
-    }
-    else {
-        NSPredicate *predicate = [searchString length] > 0 ? [NSPredicate predicateWithFormat:@"code beginsWith[cd] %@ AND active = %@", searchString, @YES] : [NSPredicate predicateWithFormat:@"active = %@", @YES];
-        [self.searchFetchRequestStops setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"code" ascending:YES selector:@selector(localizedStandardCompare:)]]];
-        [self.searchFetchRequestStops setPredicate:predicate];
-    }
-
-    [self performFetch];
-
-    return YES;
-}
+//- (void)searchDisplayController:(UISearchDisplayController *)controller didLoadSearchResultsTableView:(UITableView *)tableView {
+//    [tableView registerClass:[SubtitleCell class] forCellReuseIdentifier:CellIdentifier];
+//}
+//
+//- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
+//    return [self shouldReloadTableForSearchString:searchString];
+//}
+//
+//- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption {
+//    NSString *searchString = controller.searchBar.text;
+//    return [self shouldReloadTableForSearchString:searchString];
+//}
+//
+//- (void)searchDisplayController:(UISearchDisplayController *)controller willUnloadSearchResultsTableView:(UITableView *)tableView; {
+//    currentTableView = self.tableView;
+//    [self performFetch];
+//}
+//
+//- (void)searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller {
+//    currentTableView = self.tableView;
+//    [self performFetch];
+//}
+//
+//- (BOOL)shouldReloadTableForSearchString:(NSString *)searchString {
+//    currentTableView = self.searchDisplayController.searchResultsTableView;
+//
+//    if (displayMode == DisplayMode_Lines) {
+//        NSPredicate *predicate = [searchString length] > 0 ? [NSPredicate predicateWithFormat:@"name beginsWith[cd] %@ AND active = %@", searchString, @YES] : [NSPredicate predicateWithFormat:@"active = %@", @YES];
+//        [self.searchFetchRequestLines setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(localizedStandardCompare:)], [NSSortDescriptor sortDescriptorWithKey:@"direction" ascending:YES selector:@selector(localizedStandardCompare:)]]];
+//        [self.searchFetchRequestLines setPredicate:predicate];
+//    }
+//    else {
+//        NSPredicate *predicate = [searchString length] > 0 ? [NSPredicate predicateWithFormat:@"code beginsWith[cd] %@ AND active = %@", searchString, @YES] : [NSPredicate predicateWithFormat:@"active = %@", @YES];
+//        [self.searchFetchRequestStops setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"code" ascending:YES selector:@selector(localizedStandardCompare:)]]];
+//        [self.searchFetchRequestStops setPredicate:predicate];
+//    }
+//
+//    [self performFetch];
+//
+//    return YES;
+//}
 
 @end

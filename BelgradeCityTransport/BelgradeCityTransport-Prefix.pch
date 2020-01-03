@@ -27,8 +27,6 @@
 
 extern double const kZoomLevel;
 
-#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
-
 #define TICK NSDate *startTime = [NSDate date];
 #define TOCK NSLog(@"Elapsed Time: %f", -[startTime timeIntervalSinceNow]);
 

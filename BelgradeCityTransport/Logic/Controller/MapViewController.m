@@ -14,17 +14,13 @@
 #import "GSPStop.h"
 #import "DetailViewController.h"
 
-#import "CCHMapClusterController.h"
-#import "CCHMapClusterControllerDelegate.h"
 #import "ClusterAnnotationView.h"
-
-#import "Belgrade_City_Transport-Swift.h"
 
 float const kDropDownHideTime = 2.5;
 double const kZoomLevel = 1000.0;
 int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
 
-@interface MapViewController () <UIActionSheetDelegate, MKMapViewDelegate, UIAlertViewDelegate, CLLocationManagerDelegate, CCHMapClusterControllerDelegate> {
+@interface MapViewController () <UIActionSheetDelegate, MKMapViewDelegate, UIAlertViewDelegate, CLLocationManagerDelegate> {
     CLLocation *_oldLocation;
     BOOL _initiallyLocated;
     CLLocationManager *_locationManager;
@@ -34,9 +30,7 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
 @property(nonatomic, weak) IBOutlet MKMapView *mapView;
 @property(nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 
-@property(strong, nonatomic) CCHMapClusterController *mapClusterController;
-
-- (IBAction)tappedLocateMe:(id)sender;
+//@property(strong, nonatomic) CCHMapClusterController *mapClusterController;
 
 @end
 
@@ -56,12 +50,10 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
 }
 
 - (void)initMapView {
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
-        _locationManager = [[CLLocationManager alloc] init];
-        _locationManager.delegate = self;
-        [_locationManager requestWhenInUseAuthorization];
-        [_locationManager startUpdatingLocation];
-    }
+    _locationManager = [[CLLocationManager alloc] init];
+    _locationManager.delegate = self;
+    [_locationManager requestWhenInUseAuthorization];
+    [_locationManager startUpdatingLocation];
 
     // start with Belgrade center
     CLLocationCoordinate2D zoomLocation = CLLocationCoordinate2DMake(44.820556, 20.462222);
@@ -86,8 +78,8 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
     [self initMapView];
     self.buttonLocateMe.enabled = NO;
 
-    self.mapClusterController = [[CCHMapClusterController alloc] initWithMapView:self.mapView];
-    self.mapClusterController.delegate = self;
+//    self.mapClusterController = [[CCHMapClusterController alloc] initWithMapView:self.mapView];
+//    self.mapClusterController.delegate = self;
 
     [self startAddingAnnotations];
 }
@@ -133,12 +125,12 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
 }
 
 - (void)dispatchAnnotations:(NSArray *)annotations queue:(NSOperationQueue *)operationQueue {
-    NSArray *annotationsToDispatch = [annotations copy];
-    [operationQueue addOperationWithBlock:^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.mapClusterController addAnnotations:annotationsToDispatch withCompletionHandler:nil];
-        });
-    }];
+//    NSArray *annotationsToDispatch = [annotations copy];
+//    [operationQueue addOperationWithBlock:^{
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [self.mapClusterController addAnnotations:annotationsToDispatch withCompletionHandler:nil];
+//        });
+//    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -259,12 +251,10 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
 #pragma mark - CLLocationManagerDelegate
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
-        if (status == kCLAuthorizationStatusAuthorizedWhenInUse) {
-            if (!self.buttonLocateMe.enabled)
-                self.buttonLocateMe.enabled = YES;
-            _mapView.showsUserLocation = YES;
-        }
+    if (status == kCLAuthorizationStatusAuthorizedWhenInUse) {
+        if (!self.buttonLocateMe.enabled)
+            self.buttonLocateMe.enabled = YES;
+        _mapView.showsUserLocation = YES;
     }
 }
 
@@ -283,42 +273,42 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
     MKAnnotationView *annotationView;
 
-    if ([annotation isKindOfClass:CCHMapClusterAnnotation.class]) {
-        static NSString *identifier = @"clusterAnnotation";
-
-        ClusterAnnotationView *clusterAnnotationView = (ClusterAnnotationView *) [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
-        if (clusterAnnotationView) {
-            clusterAnnotationView.annotation = annotation;
-        } else {
-            clusterAnnotationView = [[ClusterAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
-            clusterAnnotationView.canShowCallout = YES;
-        }
-
-        CCHMapClusterAnnotation *clusterAnnotation = (CCHMapClusterAnnotation *) annotation;
-        clusterAnnotationView.count = clusterAnnotation.annotations.count;
-        clusterAnnotationView.blue = false;
-        clusterAnnotationView.uniqueLocation = clusterAnnotation.isUniqueLocation;
-        if (clusterAnnotationView.uniqueLocation) {
-            if (clusterAnnotationView.rightCalloutAccessoryView == nil)
-                clusterAnnotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-        } else {
-            clusterAnnotationView.rightCalloutAccessoryView = nil;
-        }
-
-        annotationView = clusterAnnotationView;
-    }
+//    if ([annotation isKindOfClass:CCHMapClusterAnnotation.class]) {
+//        static NSString *identifier = @"clusterAnnotation";
+//
+//        ClusterAnnotationView *clusterAnnotationView = (ClusterAnnotationView *) [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+//        if (clusterAnnotationView) {
+//            clusterAnnotationView.annotation = annotation;
+//        } else {
+//            clusterAnnotationView = [[ClusterAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+//            clusterAnnotationView.canShowCallout = YES;
+//        }
+//
+//        CCHMapClusterAnnotation *clusterAnnotation = (CCHMapClusterAnnotation *) annotation;
+//        clusterAnnotationView.count = clusterAnnotation.annotations.count;
+//        clusterAnnotationView.blue = false;
+//        clusterAnnotationView.uniqueLocation = clusterAnnotation.isUniqueLocation;
+//        if (clusterAnnotationView.uniqueLocation) {
+//            if (clusterAnnotationView.rightCalloutAccessoryView == nil)
+//                clusterAnnotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+//        } else {
+//            clusterAnnotationView.rightCalloutAccessoryView = nil;
+//        }
+//
+//        annotationView = clusterAnnotationView;
+//    }
 
     return annotationView;
 }
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
-    LocationAnnotation *annotation = (LocationAnnotation *) ((CCHMapClusterAnnotation *) view.annotation).annotations.anyObject;
-
-    DetailViewController *detailViewController = [[DetailViewController alloc] init];
-    detailViewController.displayMode = DisplayMode_Stops;
-    detailViewController.managedObjectContext = self.managedObjectContext;
-    detailViewController.object = [DataManager.sharedInstance fetchStopForCode:annotation.subtitle];
-    [self.navigationController pushViewController:detailViewController animated:YES];
+//    LocationAnnotation *annotation = (LocationAnnotation *) ((CCHMapClusterAnnotation *) view.annotation).annotations.anyObject;
+//
+//    DetailViewController *detailViewController = [[DetailViewController alloc] init];
+//    detailViewController.displayMode = DisplayMode_Stops;
+//    detailViewController.managedObjectContext = self.managedObjectContext;
+//    detailViewController.object = [DataManager.sharedInstance fetchStopForCode:annotation.subtitle];
+//    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
@@ -339,37 +329,37 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
 
 #pragma mark - CCHMapClusterControllerDelegate
 
-- (NSString *)mapClusterController:(CCHMapClusterController *)mapClusterController titleForMapClusterAnnotation:(CCHMapClusterAnnotation *)mapClusterAnnotation {
-    NSUInteger numAnnotations = mapClusterAnnotation.annotations.count;
-    if (numAnnotations == 1) {
-        LocationAnnotation *annotation = (LocationAnnotation *) mapClusterAnnotation.annotations.anyObject;
-        return annotation.title;
-    } else {
-        return [NSString stringWithFormat:NSLocalizedString(@"clusterAnnotationStopsFormatText", nil), numAnnotations];
-    }
-}
-
-- (NSString *)mapClusterController:(CCHMapClusterController *)mapClusterController subtitleForMapClusterAnnotation:(CCHMapClusterAnnotation *)mapClusterAnnotation {
-    NSUInteger numAnnotations = mapClusterAnnotation.annotations.count;
-    if (numAnnotations == 1) {
-        LocationAnnotation *annotation = (LocationAnnotation *) mapClusterAnnotation.annotations.anyObject;
-        return annotation.subtitle;
-    } else {
-        return nil;
-    }
-}
-
-- (void)mapClusterController:(CCHMapClusterController *)mapClusterController willReuseMapClusterAnnotation:(CCHMapClusterAnnotation *)mapClusterAnnotation {
-    ClusterAnnotationView *clusterAnnotationView = (ClusterAnnotationView *) [self.mapView viewForAnnotation:mapClusterAnnotation];
-    clusterAnnotationView.count = mapClusterAnnotation.annotations.count;
-    clusterAnnotationView.uniqueLocation = mapClusterAnnotation.isUniqueLocation;
-    clusterAnnotationView.blue = false;
-    if (clusterAnnotationView.count == 1) {
-        if (clusterAnnotationView.rightCalloutAccessoryView == nil)
-            clusterAnnotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    } else {
-        clusterAnnotationView.rightCalloutAccessoryView = nil;
-    }
-}
+//- (NSString *)mapClusterController:(CCHMapClusterController *)mapClusterController titleForMapClusterAnnotation:(CCHMapClusterAnnotation *)mapClusterAnnotation {
+//    NSUInteger numAnnotations = mapClusterAnnotation.annotations.count;
+//    if (numAnnotations == 1) {
+//        LocationAnnotation *annotation = (LocationAnnotation *) mapClusterAnnotation.annotations.anyObject;
+//        return annotation.title;
+//    } else {
+//        return [NSString stringWithFormat:NSLocalizedString(@"clusterAnnotationStopsFormatText", nil), numAnnotations];
+//    }
+//}
+//
+//- (NSString *)mapClusterController:(CCHMapClusterController *)mapClusterController subtitleForMapClusterAnnotation:(CCHMapClusterAnnotation *)mapClusterAnnotation {
+//    NSUInteger numAnnotations = mapClusterAnnotation.annotations.count;
+//    if (numAnnotations == 1) {
+//        LocationAnnotation *annotation = (LocationAnnotation *) mapClusterAnnotation.annotations.anyObject;
+//        return annotation.subtitle;
+//    } else {
+//        return nil;
+//    }
+//}
+//
+//- (void)mapClusterController:(CCHMapClusterController *)mapClusterController willReuseMapClusterAnnotation:(CCHMapClusterAnnotation *)mapClusterAnnotation {
+//    ClusterAnnotationView *clusterAnnotationView = (ClusterAnnotationView *) [self.mapView viewForAnnotation:mapClusterAnnotation];
+//    clusterAnnotationView.count = mapClusterAnnotation.annotations.count;
+//    clusterAnnotationView.uniqueLocation = mapClusterAnnotation.isUniqueLocation;
+//    clusterAnnotationView.blue = false;
+//    if (clusterAnnotationView.count == 1) {
+//        if (clusterAnnotationView.rightCalloutAccessoryView == nil)
+//            clusterAnnotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+//    } else {
+//        clusterAnnotationView.rightCalloutAccessoryView = nil;
+//    }
+//}
 
 @end

@@ -36,8 +36,6 @@
 
     self.title = NSLocalizedString(@"vcInformationTitle", nil);
     [self setClearsSelectionOnViewWillAppear:YES];
-
-    [self getAppLinks];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -215,10 +213,10 @@
             case 0:
                 break;
             case 1:
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://cocoa-bytes.com"]];
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://vladislavjevremovic.com"] options:@{} completionHandler:nil];
                 break;
             case 2:
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://rs.linkedin.com/in/zarkocvijovic"]];
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://rs.linkedin.com/in/zarkocvijovic"] options:@{} completionHandler:nil];
                 break;
 
             default:
@@ -227,14 +225,14 @@
     } else if (indexPath.section == 2) {
         switch (indexPath.row) {
             case 0:
-                [self performSegueWithIdentifier:@"WebViewSegue" sender:[self stringFromFile:@"Acknowledgements.html"]];
+                // [self performSegueWithIdentifier:@"WebViewSegue" sender:[self stringFromFile:@"Acknowledgements.html"]];
                 break;
 
             default:
                 break;
         }
     } else if (indexPath.section == 3) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appLinks[(NSUInteger) indexPath.row].url]];
+        // [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appLinks[(NSUInteger) indexPath.row].url]];
     }
 }
 
@@ -261,80 +259,6 @@
     }
     
     return @"";
-}
-
-- (void)getAppLinks {
-    NSString *ownId = @"1080130205";  // don't include this app
-    appLinks = [NSMutableArray array];
-
-    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    [spinner startAnimating];
-    spinner.frame = CGRectMake(0, 0, self.view.bounds.size.width, 44);
-    self.tableView.tableHeaderView = spinner;
-
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/us/developer/vladislav-jevremovic/id612312893"];
-    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
-    NSURLSessionDataTask *task = [session dataTaskWithRequest:urlRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        if (error == nil) {
-            NSString *stringWithData = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-
-            NSMutableArray *ids = [NSMutableArray array];
-            NSRegularExpression *re = [[NSRegularExpression alloc] initWithPattern:@"https\\:\\/\\/itunes\\.apple\\.com\\/us\\/app\\/[a-z-+]*\\/id([0-9]*)\\?mt=8" options:NSRegularExpressionCaseInsensitive error:nil];
-            NSArray *matches = [re matchesInString:stringWithData options:0 range:NSMakeRange(0, stringWithData.length)];
-            for (NSTextCheckingResult *match in matches) {
-                NSString *substring = [stringWithData substringWithRange:[match rangeAtIndex:1]];
-                if (![ids containsObject:substring] && ![substring isEqualToString:ownId]) {
-                    [ids addObject:substring];
-                }
-            }
-            for (NSString *_id in ids) {
-                NSURL *url2 = [NSURL URLWithString:[NSString stringWithFormat:@"https://itunes.apple.com/lookup?id=%@", _id]];
-                NSURLRequest *urlRequest2 = [NSURLRequest requestWithURL:url2];
-                NSURLSessionDataTask *task2 = [session dataTaskWithRequest:urlRequest2 completionHandler:^(NSData *data2, NSURLResponse *response2, NSError *error2) {
-                    if (error2 == nil) {
-                        NSError *jsonError = nil;
-                        id responseObject = [NSJSONSerialization JSONObjectWithData:data2 options:(NSJSONReadingOptions) 0 error:&jsonError];
-                        if ([responseObject isKindOfClass:[NSDictionary class]]) {
-                            NSDictionary *dict = (NSDictionary *)responseObject;
-                            if ([dict[@"results"] isKindOfClass:[NSArray class]]) {
-                                NSArray *results = dict[@"results"];
-                                for (NSDictionary *result in results) {
-                                    AppLink *appLink = [[AppLink alloc] init];
-                                    appLink.title = result[@"trackName"];
-                                    appLink.url = result[@"trackViewUrl"];
-                                    appLink.imageUrl = result[@"artworkUrl60"];
-                                    [self->appLinks addObject:appLink];
-                                }
-                            }
-                        }
-
-                        [self->appLinks sortUsingComparator:^NSComparisonResult(id obj1, id obj2){
-                            AppLink *a1 = (AppLink *)obj1;
-                            AppLink *a2 = (AppLink *)obj2;
-                            return [a1.title compare:a2.title];
-                        }];
-
-                        dispatch_async(dispatch_get_main_queue(), ^{
-                            [self.tableView beginUpdates];
-                            [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:3] withRowAnimation:UITableViewRowAnimationAutomatic];
-                            [self.tableView endUpdates];
-                        });
-                    } else {
-                        NSLog(@"Error: %@", error2);
-                    }
-                }];
-                [task2 resume];
-            }
-        } else {
-            NSLog(@"Error: %@", error);
-        }
-
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.tableView.tableHeaderView = nil;
-        });
-    }];
-    [task resume];
 }
 
 @end

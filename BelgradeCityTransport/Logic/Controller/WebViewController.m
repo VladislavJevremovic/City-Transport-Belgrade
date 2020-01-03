@@ -68,7 +68,7 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     if (navigationType == UIWebViewNavigationTypeLinkClicked) {
-        [[UIApplication sharedApplication] openURL:[request URL]];
+        [[UIApplication sharedApplication] openURL:[request URL] options:@{} completionHandler:nil];
         return NO;
     }
 

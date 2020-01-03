@@ -29,13 +29,13 @@
         detailMapViewController = [[DetailMapViewController alloc] init];
         detailTableViewController.delegate = self;
 
-        [self setFrontController:detailTableViewController];
-        [self setBackController:detailMapViewController];
-        [self setHidesBottomBarWhenPushed:YES];
-        [self setClosedTopOffset:CLOSED_TOP_OFFSET];
-        [self setOpenBottomOffset:OPEN_BOTTOM_OFFSET];
-        [self setPullToToggleEnabled:YES];
-        [self setOpenDragOffset:OPEN_DRAG_OFFSET];
+//        [self setFrontController:detailTableViewController];
+//        [self setBackController:detailMapViewController];
+//        [self setHidesBottomBarWhenPushed:YES];
+//        [self setClosedTopOffset:CLOSED_TOP_OFFSET];
+//        [self setOpenBottomOffset:OPEN_BOTTOM_OFFSET];
+//        [self setPullToToggleEnabled:YES];
+//        [self setOpenDragOffset:OPEN_DRAG_OFFSET];
     }
     return self;
 }

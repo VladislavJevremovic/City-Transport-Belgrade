@@ -11,12 +11,10 @@
 @implementation LocationAnnotation
 
 - (instancetype)initWithName:(NSString *)name
-           address:(NSString *)address
-        coordinate:(CLLocationCoordinate2D)coordinate {
-    if (self = [super init]) {
-        self.title = name;
-        self.subtitle = address;
-        self.coordinate = coordinate;
+                     address:(NSString *)address
+                  coordinate:(CLLocationCoordinate2D)coordinate {
+    if (self = [super initWithCoordinate:coordinate title:name subtitle:address]) {
+        //
     }
 
     return self;

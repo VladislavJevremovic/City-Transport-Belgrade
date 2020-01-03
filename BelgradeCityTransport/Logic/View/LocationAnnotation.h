@@ -9,9 +9,8 @@
 #import <CoreLocation/CLLocation.h>
 #import "AnnotationType.h"
 #import <MapKit/MapKit.h>
-#import "CCHMapClusterAnnotation.h"
 
-@interface LocationAnnotation : CCHMapClusterAnnotation
+@interface LocationAnnotation : MKPointAnnotation //MKClusterAnnotation
 
 - (instancetype)initWithName:(NSString *)name
                      address:(NSString *)address

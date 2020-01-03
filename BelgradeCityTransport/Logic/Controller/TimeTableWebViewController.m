@@ -10,10 +10,11 @@
 #import "Settings.h"
 #import "TimeTableWebViewController.h"
 #import "NSString+Utility.h"
+#import <WebKit/WebKit.h>
 
-@interface TimeTableWebViewController () <UIWebViewDelegate>
+@interface TimeTableWebViewController () <WKNavigationDelegate>
 
-@property(nonatomic, weak) IBOutlet UIWebView *webView;
+@property(nonatomic, weak) IBOutlet WKWebView *webView;
 @property(nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property(nonatomic, weak) IBOutlet UILabel *labelBusevi;
 
@@ -52,9 +53,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.webView.scalesPageToFit = YES;
-    self.webView.dataDetectorTypes = UIDataDetectorTypeNone;
-    self.webView.delegate = self;
+//    self.webView.scalesPageToFit = YES;
+//    self.webView.dataDetectorTypes = UIDataDetectorTypeNone;
+//    self.webView.delegate = self;
 
     [self addButtonsRight];
     [self attachTapGestureRecognizerToLabelBusevi];
@@ -70,7 +71,7 @@
 }
 
 - (void)labelBuseviTapped:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://busevi.com"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://busevi.com"] options:@{} completionHandler:nil];
 }
 
 - (void)setLineName:(NSString *)lineName {
@@ -111,7 +112,7 @@
 }
 
 - (void)dealloc {
-    self.webView.delegate = nil;
+//    self.webView.delegate = nil;
     self.webView = nil;
 }
 
