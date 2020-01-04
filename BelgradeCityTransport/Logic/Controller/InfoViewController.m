@@ -51,7 +51,7 @@
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 4;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -64,13 +64,6 @@
         case 1:
             result = 3;
             break;
-        case 2:
-            result = 1;
-            break;
-        case 3:
-            result = (NSInteger) appLinks.count;
-            break;
-
         default:
             break;
     }
@@ -88,13 +81,6 @@
         case 1:
             sectionName = NSLocalizedString(@"aboutText", nil);
             break;
-        case 2:
-            sectionName = NSLocalizedString(@"acknowledgementsText", nil);
-            break;
-        case 3:
-            sectionName = NSLocalizedString(@"otherAppsText", nil);
-            break;
-
         default:
             break;
     }
@@ -149,7 +135,7 @@
                     cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
                     cell.imageView.image = nil;
                     cell.textLabel.text = NSLocalizedString(@"authorText", nil);
-                    cell.detailTextLabel.text = @"Vladislav Jevremović";
+                    cell.detailTextLabel.text = NSLocalizedString(@"authorTextValue", nil);
                     cell.accessoryType = UITableViewCellAccessoryDetailButton;
                 }
                     break;
@@ -157,7 +143,7 @@
                     cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
                     cell.imageView.image = nil;
                     cell.textLabel.text = NSLocalizedString(@"artworkText", nil);
-                    cell.detailTextLabel.text = @"Žarko Cvijović";
+                    cell.detailTextLabel.text = NSLocalizedString(@"artworkTextValue", nil);
                     cell.accessoryType = UITableViewCellAccessoryDetailButton;
                 }
                     break;
@@ -167,31 +153,6 @@
             }
         }
             break;
-        case 2: {
-            switch (indexPath.row) {
-                case 0: {
-                    cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-                    cell.imageView.image = nil;
-                    cell.textLabel.text = NSLocalizedString(@"acknowledgementsLabelText", nil);
-                    cell.detailTextLabel.text = @"";
-                    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-                }
-                    break;
-
-                default:
-                    break;
-            }
-        }
-            break;
-        case 3: {
-            cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-            cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:appLinks[(NSUInteger) indexPath.row].imageUrl]]];
-            cell.textLabel.text = appLinks[(NSUInteger) indexPath.row].title;
-            cell.detailTextLabel.text = @"";
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        }
-            break;
-
         default:
             break;
     }
@@ -222,17 +183,6 @@
             default:
                 break;
         }
-    } else if (indexPath.section == 2) {
-        switch (indexPath.row) {
-            case 0:
-                // [self performSegueWithIdentifier:@"WebViewSegue" sender:[self stringFromFile:@"Acknowledgements.html"]];
-                break;
-
-            default:
-                break;
-        }
-    } else if (indexPath.section == 3) {
-        // [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appLinks[(NSUInteger) indexPath.row].url]];
     }
 }
 
@@ -249,16 +199,6 @@
 - (void)mapStyleSelected:(id)sender {
     Settings.sharedInstance.selectedMapStyle = @(((UISegmentedControl *) sender).selectedSegmentIndex);
     [Settings.sharedInstance save];
-}
-
-- (NSString *)stringFromFile:(NSString *)file {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:file ofType:@""];
-    if (filePath) {
-        NSString *myText = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
-        return myText;
-    }
-    
-    return @"";
 }
 
 @end

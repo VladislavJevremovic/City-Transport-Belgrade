@@ -19,15 +19,12 @@
 
 @interface DetailTableViewController () <UIAlertViewDelegate> {
     NSArray *_dataSource;
-    UIAlertView *_alertView;
 }
 
 @property(nonatomic, weak) IBOutlet UIView *headerView;
 @property(nonatomic, weak) IBOutlet UILabel *label;
 @property(nonatomic, weak) IBOutlet UIImageView *imageView;
 @property(nonatomic, weak) IBOutlet UIButton *buttonFavorite;
-
-- (IBAction)tappedButtonFavorite:(id)sender;
 
 @end
 
@@ -37,37 +34,7 @@
     [super viewDidLoad];
 
     [self.tableView registerClass:[SubtitleCell class] forCellReuseIdentifier:CellIdentifier];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(applicationWillResignActiveNotification:)
-                                                 name:UIApplicationWillResignActiveNotification
-                                               object:nil];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UIApplicationWillResignActiveNotification
-                                                  object:nil];
-}
-
-- (void)applicationWillResignActiveNotification:(NSNotification *)notification {
-    if (_alertView) {
-        _alertView.delegate = nil;
-        [_alertView dismissWithClickedButtonIndex:[_alertView cancelButtonIndex]
-                                         animated:NO];
-        _alertView = nil;
-    }
+    [self updateViewWithObject:self.object];
 }
 
 #pragma mark - Private methods
@@ -128,13 +95,14 @@
         BOOL isFavoriteStop = [DataManager.sharedInstance isFavoriteStop:stopCodeString];
         if (!isFavoriteStop) {
             BOOL addedOK = [DataManager.sharedInstance addFavoriteStop:stopCodeString];
-            if (!addedOK && !_alertView) {
-                _alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"errorTitle", nil)
-                                                        message:NSLocalizedString(@"errorMaximumNumberOfFavoritesReachedText", nil)
-                                                       delegate:self
-                                              cancelButtonTitle:nil
-                                              otherButtonTitles:NSLocalizedString(@"okTitle", nil), nil];
-                [_alertView show];
+            if (!addedOK) {
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"errorTitle", nil)
+                                                                                         message:NSLocalizedString(@"errorMaximumNumberOfFavoritesReachedText", nil)
+                                                                                  preferredStyle:UIAlertControllerStyleAlert];
+                [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"okTitle", nil)
+                                                                    style:UIAlertActionStyleDefault
+                                                                  handler:nil]];
+                [self presentViewController:alertController animated:true completion:nil];
             }
         }
         else {
@@ -241,13 +209,6 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
             [cell setBackgroundColor:[UIColor whiteColor]];
         }
     }
-}
-
-#pragma mark - UIAlertViewDelegate
-
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    _alertView.delegate = nil;
-    _alertView = nil;
 }
 
 @end

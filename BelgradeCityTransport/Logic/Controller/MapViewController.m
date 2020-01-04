@@ -30,8 +30,6 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
 @property(nonatomic, weak) IBOutlet MKMapView *mapView;
 @property(nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 
-//@property(strong, nonatomic) CCHMapClusterController *mapClusterController;
-
 @end
 
 @implementation MapViewController
@@ -78,9 +76,6 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
     [self initMapView];
     self.buttonLocateMe.enabled = NO;
 
-//    self.mapClusterController = [[CCHMapClusterController alloc] initWithMapView:self.mapView];
-//    self.mapClusterController.delegate = self;
-
     [self startAddingAnnotations];
 }
 
@@ -125,12 +120,12 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
 }
 
 - (void)dispatchAnnotations:(NSArray *)annotations queue:(NSOperationQueue *)operationQueue {
-//    NSArray *annotationsToDispatch = [annotations copy];
-//    [operationQueue addOperationWithBlock:^{
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            [self.mapClusterController addAnnotations:annotationsToDispatch withCompletionHandler:nil];
-//        });
-//    }];
+    NSArray *annotationsToDispatch = [annotations copy];
+    [operationQueue addOperationWithBlock:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.mapView addAnnotations:annotationsToDispatch];
+        });
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -160,7 +155,7 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
 //    } else {
 //        whisperBackgroundColor = [UIColor colorWithRed:0.0f green:122.0f / 255.0f blue:1.0f alpha:0.7f];
 //    }
-//
+
 //    [WhisperBridge whisper:text
 //                 textColor:[UIColor whiteColor]
 //           backgroundColor:whisperBackgroundColor
@@ -270,8 +265,8 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
     }
 }
 
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
-    MKAnnotationView *annotationView;
+//- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+//    MKAnnotationView *annotationView;
 
 //    if ([annotation isKindOfClass:CCHMapClusterAnnotation.class]) {
 //        static NSString *identifier = @"clusterAnnotation";
@@ -297,18 +292,18 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
 //
 //        annotationView = clusterAnnotationView;
 //    }
-
-    return annotationView;
-}
+//
+//    return annotationView;
+//}
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
-//    LocationAnnotation *annotation = (LocationAnnotation *) ((CCHMapClusterAnnotation *) view.annotation).annotations.anyObject;
-//
-//    DetailViewController *detailViewController = [[DetailViewController alloc] init];
-//    detailViewController.displayMode = DisplayMode_Stops;
-//    detailViewController.managedObjectContext = self.managedObjectContext;
-//    detailViewController.object = [DataManager.sharedInstance fetchStopForCode:annotation.subtitle];
-//    [self.navigationController pushViewController:detailViewController animated:YES];
+    LocationAnnotation *annotation = (LocationAnnotation *)view.annotation;
+
+    DetailViewController *detailViewController = [[DetailViewController alloc] init];
+    detailViewController.displayMode = DisplayMode_Stops;
+    detailViewController.managedObjectContext = self.managedObjectContext;
+    detailViewController.object = [DataManager.sharedInstance fetchStopForCode:annotation.subtitle];
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {

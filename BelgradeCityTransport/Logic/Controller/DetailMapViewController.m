@@ -49,11 +49,6 @@
     [self updateViewWithObject:self.object];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)dealloc {
     _mapView.delegate = nil;
 }

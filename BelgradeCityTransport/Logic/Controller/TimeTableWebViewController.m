@@ -55,7 +55,7 @@
 
 //    self.webView.scalesPageToFit = YES;
 //    self.webView.dataDetectorTypes = UIDataDetectorTypeNone;
-//    self.webView.delegate = self;
+    self.webView.navigationDelegate = self;
 
     [self addButtonsRight];
     [self attachTapGestureRecognizerToLabelBusevi];
@@ -86,33 +86,28 @@
     [self loadStringIntoWebView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+//- (void)webViewDidStartLoad:(UIWebView *)webView {
+//    self.activityIndicator.hidden = NO;
+//    [self.activityIndicator startAnimating];
+//}
 
-- (void)webViewDidStartLoad:(UIWebView *)webView {
-    self.activityIndicator.hidden = NO;
-    [self.activityIndicator startAnimating];
-}
+//- (void)webViewDidFinishLoad:(UIWebView *)webView {
+//    [self.activityIndicator stopAnimating];
+//}
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
-    [self.activityIndicator stopAnimating];
-}
-
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
-    [self.activityIndicator stopAnimating];
-
-    UIAlertView *_alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"errorTitle", nil)
-                                                         message:NSLocalizedString(@"errorDepartureFetchFailedText", nil)
-                                                        delegate:self
-                                               cancelButtonTitle:nil
-                                               otherButtonTitles:NSLocalizedString(@"okTitle", nil), nil];
-    [_alertView show];
-}
+//- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+//    [self.activityIndicator stopAnimating];
+//
+//    UIAlertView *_alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"errorTitle", nil)
+//                                                         message:NSLocalizedString(@"errorDepartureFetchFailedText", nil)
+//                                                        delegate:self
+//                                               cancelButtonTitle:nil
+//                                               otherButtonTitles:NSLocalizedString(@"okTitle", nil), nil];
+//    [_alertView show];
+//}
 
 - (void)dealloc {
-//    self.webView.delegate = nil;
+    self.webView.navigationDelegate = nil;
     self.webView = nil;
 }
 

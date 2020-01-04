@@ -7,10 +7,11 @@
 //
 
 #import "WebViewController.h"
+#import <WebKit/WebKit.h>
 
-@interface WebViewController () <UIWebViewDelegate>
+@interface WebViewController () <WKNavigationDelegate>
 
-@property(nonatomic, weak) IBOutlet UIWebView *webView;
+@property(nonatomic, weak) IBOutlet WKWebView *webView;
 
 @end
 
@@ -39,9 +40,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.webView.scalesPageToFit = YES;
-    self.webView.dataDetectorTypes = UIDataDetectorTypeNone;
-    self.webView.delegate = self;
+//    self.webView.scalesPageToFit = YES;
+//    self.webView.dataDetectorTypes = UIDataDetectorTypeNone;
+    self.webView.navigationDelegate = self;
 
     if (self.string != nil)
         [self loadStringIntoWebView];
@@ -61,22 +62,19 @@
     [self loadURLIntoWebView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-    if (navigationType == UIWebViewNavigationTypeLinkClicked) {
-        [[UIApplication sharedApplication] openURL:[request URL] options:@{} completionHandler:nil];
-        return NO;
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+    if (navigationAction.navigationType == WKNavigationTypeLinkActivated) {
+        [[UIApplication sharedApplication] openURL:[navigationAction.request URL] options:@{} completionHandler:nil];
+        decisionHandler(WKNavigationActionPolicyCancel);
+        return;
     }
 
-    return YES;
+    decisionHandler(WKNavigationActionPolicyAllow);
 }
 
 - (void)dealloc {
-    self.webView.delegate = nil;
+    self.webView.navigationDelegate = nil;
+    self.webView.UIDelegate = nil;
     self.webView = nil;
 }
 

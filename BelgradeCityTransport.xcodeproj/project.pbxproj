@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		861465B223BF431D009096B2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861465B123BF431D009096B2 /* Launch Screen.storyboard */; };
+		861ED46623BFB9E7000E3F9F /* MBPullDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861ED46523BFB9E7000E3F9F /* MBPullDownController.m */; };
 		8650E3E423BB868800699FDF /* DetailMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8650E39923BB868800699FDF /* DetailMapViewController.m */; };
 		8650E3E523BB868800699FDF /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8650E39A23BB868800699FDF /* InfoViewController.m */; };
 		8650E3E623BB868800699FDF /* FavoriteStopsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8650E39D23BB868800699FDF /* FavoriteStopsViewController.m */; };
@@ -52,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		861465B123BF431D009096B2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		861ED46423BFB9E7000E3F9F /* MBPullDownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPullDownController.h; sourceTree = "<group>"; };
+		861ED46523BFB9E7000E3F9F /* MBPullDownController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPullDownController.m; sourceTree = "<group>"; };
 		8650E39223BB868800699FDF /* BelgradeCityTransport-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BelgradeCityTransport-Prefix.pch"; sourceTree = "<group>"; };
 		8650E39423BB868800699FDF /* DrawingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingHelper.h; sourceTree = "<group>"; };
 		8650E39523BB868800699FDF /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
@@ -144,6 +147,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		861ED46223BFB9E7000E3F9F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				861ED46323BFB9E7000E3F9F /* MBPullDownController */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		861ED46323BFB9E7000E3F9F /* MBPullDownController */ = {
+			isa = PBXGroup;
+			children = (
+				861ED46423BFB9E7000E3F9F /* MBPullDownController.h */,
+				861ED46523BFB9E7000E3F9F /* MBPullDownController.m */,
+			);
+			path = MBPullDownController;
+			sourceTree = "<group>";
+		};
 		8650E39323BB868800699FDF /* Logic */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +175,7 @@
 				8650E3CB23BB868800699FDF /* DataStore.m */,
 				8650E39423BB868800699FDF /* DrawingHelper.h */,
 				8650E3CA23BB868800699FDF /* DrawingHelper.m */,
+				861ED46223BFB9E7000E3F9F /* Library */,
 				8650E3CC23BB868800699FDF /* Main */,
 				8650E3AF23BB868800699FDF /* Model */,
 				8650E39623BB868800699FDF /* Settings.h */,
@@ -432,6 +453,7 @@
 				8650E3F723BB868900699FDF /* MapStyleCell.m in Sources */,
 				8650E3F923BB868900699FDF /* ClusterAnnotationView.m in Sources */,
 				8650E3EC23BB868800699FDF /* DetailTableViewController.m in Sources */,
+				861ED46623BFB9E7000E3F9F /* MBPullDownController.m in Sources */,
 				8650E3EB23BB868800699FDF /* TimeTableWebViewController.m in Sources */,
 				8650E3FC23BB868900699FDF /* DataStore.m in Sources */,
 				8650E3F523BB868900699FDF /* SwitchCell.m in Sources */,

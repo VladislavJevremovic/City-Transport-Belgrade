@@ -14,7 +14,7 @@
                      address:(NSString *)address
                   coordinate:(CLLocationCoordinate2D)coordinate {
     if (self = [super initWithCoordinate:coordinate title:name subtitle:address]) {
-        //
+        // ...
     }
 
     return self;

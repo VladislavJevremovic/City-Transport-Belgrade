@@ -15,7 +15,6 @@
 @interface DetailViewController () <DetailTableViewControllerDelegate, UIAlertViewDelegate> {
     DetailTableViewController *detailTableViewController;
     DetailMapViewController *detailMapViewController;
-    UIAlertView *_alertView;
 }
 
 @end
@@ -29,13 +28,13 @@
         detailMapViewController = [[DetailMapViewController alloc] init];
         detailTableViewController.delegate = self;
 
-//        [self setFrontController:detailTableViewController];
-//        [self setBackController:detailMapViewController];
-//        [self setHidesBottomBarWhenPushed:YES];
-//        [self setClosedTopOffset:CLOSED_TOP_OFFSET];
-//        [self setOpenBottomOffset:OPEN_BOTTOM_OFFSET];
-//        [self setPullToToggleEnabled:YES];
-//        [self setOpenDragOffset:OPEN_DRAG_OFFSET];
+        [self setFrontController:detailTableViewController];
+        [self setBackController:detailMapViewController];
+        [self setHidesBottomBarWhenPushed:YES];
+        [self setClosedTopOffset:CLOSED_TOP_OFFSET];
+        [self setOpenBottomOffset:OPEN_BOTTOM_OFFSET];
+        [self setPullToToggleEnabled:YES];
+        [self setOpenDragOffset:OPEN_DRAG_OFFSET];
     }
     return self;
 }
@@ -69,12 +68,13 @@
 }
 
 - (void)showVehiclePositionsUnavailableMessage:(id)sender {
-    _alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"infoTitle", nil)
-                                            message:NSLocalizedString(@"errorVehiclePositionsUnavailableLongText", nil)
-                                           delegate:self
-                                  cancelButtonTitle:nil
-                                  otherButtonTitles:NSLocalizedString(@"okTitle", nil), nil];
-    [_alertView show];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"infoTitle", nil)
+                                                                             message:NSLocalizedString(@"errorVehiclePositionsUnavailableLongText", nil)
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"okTitle", nil)
+                                                        style:UIAlertActionStyleDefault
+                                                      handler:nil]];
+    [self presentViewController:alertController animated:true completion:nil];
 }
 
 #pragma mark - Private methods
@@ -84,7 +84,7 @@
 
     if (self.displayMode == DisplayMode_Stops) {
         UIBarButtonItem *rightItemUSSD = [[UIBarButtonItem alloc]
-                initWithTitle:@"*011*"
+                initWithTitle:NSLocalizedString(@"infoUSSD", nil)
                         style:UIBarButtonItemStylePlain
                        target:self
                        action:@selector(clipBoardActionWithStopCode:)];
@@ -152,12 +152,13 @@
         [self presentViewController:alert animated:YES completion:nil];
     }
     else {
-        _alertView = [[UIAlertView alloc] initWithTitle:phoneToCall
-                                                message:NSLocalizedString(@"infoUSSDText", nil)
-                                               delegate:self
-                                      cancelButtonTitle:nil
-                                      otherButtonTitles:NSLocalizedString(@"okTitle", nil), nil];
-        [_alertView show];
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:phoneToCall
+                                                                                 message:NSLocalizedString(@"infoUSSDText", nil)
+                                                                          preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"okTitle", nil)
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:nil]];
+        [self presentViewController:alertController animated:true completion:nil];
     }
 }
 
@@ -181,13 +182,6 @@
     detailViewController.managedObjectContext = self.managedObjectContext;
     detailViewController.object = object;
     [self.navigationController pushViewController:detailViewController animated:YES];
-}
-
-#pragma mark - UIAlertViewDelegate
-
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    _alertView.delegate = nil;
-    _alertView = nil;
 }
 
 @end

@@ -29,6 +29,7 @@
 
 "searchStopsPlaceholderText" = "Unesite broj stanice";
 "searchLinesPlaceholderText" = "Unesite broj linije";
+"infoUSSD" = "*011*";
 "infoUSSDText" = "Upišite/nalepite dati broj u Phone aplikaciju za dobijanje udaljenosti dolazećih vozila.\n(Aplikacije ne smeju same pozivati USSD brojeve.)\n\n Podatke dostavlja i naplaćuje (1.8 RSD) spoljni sistem sa kojim autor ove aplikacije nije ni na koji način povezan.";
 "clusterAnnotationStopsFormatText" = "Broj stanica: %tu";
 
@@ -40,7 +41,9 @@
 "mapStyleHybridText" = "Hibridna";
 "versionText" = "Verzija";
 "authorText" = "Autor";
+"authorTextValue" = "Vladislav Jevremović";
 "artworkText" = "Dizajn";
+"artworkTextValue" = "Žarko Cvijović";
 "aboutText" = "O aplikaciji";
 "acknowledgementsText" = "Zahvalnice";
 "acknowledgementsLabelText" = "Komponente trećih strana";

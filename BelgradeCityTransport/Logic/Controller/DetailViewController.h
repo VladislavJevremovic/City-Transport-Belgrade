@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MBPullDownController.h"
 #import "DisplayMode.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : MBPullDownController
 
 @property(nonatomic, strong) id object;
 @property(nonatomic, assign) DisplayMode displayMode;

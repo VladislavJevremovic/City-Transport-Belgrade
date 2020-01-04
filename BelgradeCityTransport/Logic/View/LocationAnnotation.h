@@ -10,7 +10,7 @@
 #import "AnnotationType.h"
 #import <MapKit/MapKit.h>
 
-@interface LocationAnnotation : MKPointAnnotation //MKClusterAnnotation
+@interface LocationAnnotation : MKPointAnnotation
 
 - (instancetype)initWithName:(NSString *)name
                      address:(NSString *)address
