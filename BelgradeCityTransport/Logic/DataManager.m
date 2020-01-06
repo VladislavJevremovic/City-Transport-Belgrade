@@ -13,6 +13,9 @@
 #import "GSPLine.h"
 #import "GSPLineStop.h"
 
+#define TICK NSDate *startTime = [NSDate date];
+#define TOCK NSLog(@"Elapsed Time: %f", -[startTime timeIntervalSinceNow]);
+
 static const NSInteger kMaximumNumberOfFavoriteStops = 20;
 
 @implementation DataManager

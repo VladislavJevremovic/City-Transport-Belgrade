@@ -193,9 +193,9 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         if (![lineStop isKindOfClass:[NSNull class]]) {
             GSPLine *line = [DataManager.sharedInstance lineForName:lineStop.line.name withDirection:lineStop.line.direction];
             if (![line.active boolValue]) {
-                [cell setBackgroundColor:kCustomColorLightGray];
+                [cell setBackgroundColor:UIColor.lightGrayColor];
             } else {
-                [cell setBackgroundColor:[UIColor whiteColor]];
+                [cell setBackgroundColor:UIColor.whiteColor];
             }
         }
     }
@@ -203,7 +203,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         GSPStop *stop = (GSPStop *) _dataSource[(NSUInteger) indexPath.row];
         if (![stop isKindOfClass:[NSNull class]]) {
             if (![stop.active boolValue]) {
-                [cell setBackgroundColor:kCustomColorLightGray];
+                [cell setBackgroundColor:UIColor.lightGrayColor];
             }
         } else {
             [cell setBackgroundColor:[UIColor whiteColor]];

@@ -21,6 +21,13 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jMC-0z-hB9">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                             </mapView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eis-TG-99M">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qpv-Rf-NVY">
                                 <rect key="frame" x="188.5" y="344" width="37" height="37"/>
                                 <color key="color" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,8 +54,11 @@
                             <constraint firstAttribute="centerX" secondItem="qpv-Rf-NVY" secondAttribute="centerX" id="B3X-1V-IRp"/>
                             <constraint firstAttribute="centerY" secondItem="qpv-Rf-NVY" secondAttribute="centerY" id="BKJ-sh-QQH"/>
                             <constraint firstAttribute="trailing" secondItem="zAr-kK-7zr" secondAttribute="trailing" constant="20" id="Her-x0-3Hl"/>
+                            <constraint firstAttribute="trailing" secondItem="Eis-TG-99M" secondAttribute="trailing" id="WkB-sS-XX8"/>
+                            <constraint firstItem="Eis-TG-99M" firstAttribute="top" secondItem="TQw-8F-lV9" secondAttribute="bottom" id="caV-oc-fyn"/>
                             <constraint firstItem="4SC-vN-fDQ" firstAttribute="top" secondItem="zAr-kK-7zr" secondAttribute="bottom" constant="20" id="pMk-2f-R8P"/>
                             <constraint firstItem="jMC-0z-hB9" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" id="pY3-P6-kwf"/>
+                            <constraint firstItem="Eis-TG-99M" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" id="tfz-ij-Nbf"/>
                             <constraint firstItem="4SC-vN-fDQ" firstAttribute="top" secondItem="jMC-0z-hB9" secondAttribute="bottom" id="z1M-re-V4f"/>
                         </constraints>
                     </view>

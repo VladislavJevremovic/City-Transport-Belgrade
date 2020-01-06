@@ -17,6 +17,8 @@
 #import "DrawingHelper.h"
 #import "MKMapView+Zoom.h"
 
+double const kDetailZoomLevel = 1000.0;
+
 @interface DetailMapViewController () <MKMapViewDelegate>
 
 @property(nonatomic, weak) IBOutlet MKMapView *mapView;
@@ -80,7 +82,7 @@
 
     MKMapCamera *camera = [MKMapCamera cameraLookingAtCenterCoordinate:zoomLocation
                                                      fromEyeCoordinate:zoomLocation
-                                                           eyeAltitude:kZoomLevel];
+                                                           eyeAltitude:kDetailZoomLevel];
 
     [_mapView setCamera:camera animated:NO];
     _mapView.rotateEnabled = NO;
@@ -119,7 +121,7 @@
 
         MKMapCamera *camera = [MKMapCamera cameraLookingAtCenterCoordinate:coordinate
                                                          fromEyeCoordinate:coordinate
-                                                               eyeAltitude:kZoomLevel];
+                                                               eyeAltitude:kDetailZoomLevel];
         [_mapView setCamera:camera animated:NO];
     }
 }
@@ -191,7 +193,7 @@
 
         pinView.enabled = YES;
         pinView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-        pinView.canShowCallout = (self.displayMode == DisplayMode_Lines);
+        pinView.canShowCallout = false;
         pinView.image = [[DrawingHelper sharedInstance] bluePinWithArea:NO];
 
         return pinView;
@@ -201,13 +203,13 @@
 }
 
 - (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)annotationViews {
-    for (MKAnnotationView *annView in annotationViews) {
-        annView.alpha = 0.0;
-        [UIView animateWithDuration:0.5
-                         animations:^{
-                             annView.alpha = 1.0;
-                         }];
-    }
+//    for (MKAnnotationView *annView in annotationViews) {
+//        annView.alpha = 0.0;
+//        [UIView animateWithDuration:0.5
+//                         animations:^{
+//                             annView.alpha = 1.0;
+//                         }];
+//    }
 }
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {

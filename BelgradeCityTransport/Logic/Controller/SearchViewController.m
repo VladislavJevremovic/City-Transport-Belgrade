@@ -23,9 +23,6 @@
     NSArray *fetchedObjects;
 }
 
-@property(nonatomic, strong) NSFetchRequest *fetchRequestLines;
-@property(nonatomic, strong) NSFetchRequest *fetchRequestStops;
-
 @property(nonatomic, strong) NSFetchRequest *searchFetchRequestLines;
 @property(nonatomic, strong) NSFetchRequest *searchFetchRequestStops;
 
@@ -44,8 +41,11 @@
     self.searchController.searchResultsUpdater = self;
     self.searchController.obscuresBackgroundDuringPresentation = false;
     self.searchController.searchBar.placeholder = nil;
+    self.searchController.searchBar.backgroundColor = UIColor.whiteColor;
     self.tableView.tableHeaderView = self.searchController.searchBar;
     self.definesPresentationContext = true;
+
+//    self.extendedLayoutIncludesOpaqueBars = YES;
 
     displayMode = self.initialMode;
     [self adjustInterfaceBasedOnSearchMode];
@@ -54,9 +54,6 @@
 }
 
 - (void)dealloc {
-    self.fetchRequestLines = nil;
-    self.fetchRequestStops = nil;
-    
     self.searchFetchRequestLines = nil;
     self.searchFetchRequestStops = nil;
     
@@ -126,7 +123,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = (UITableViewCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-
     [self configureCell:cell atIndexPath:indexPath];
 
     return cell;
@@ -138,7 +134,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (displayMode == DisplayMode_Stops) {
         GSPStop *stop = (GSPStop *) fetchedObjects[(NSUInteger) indexPath.row];
         if (![stop.active boolValue]) {
-            [cell setBackgroundColor:kCustomColorLightGray];
+            [cell setBackgroundColor:UIColor.lightGrayColor];
         } else {
             [cell setBackgroundColor:[UIColor whiteColor]];
         }
@@ -146,7 +142,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     else if (displayMode == DisplayMode_Lines) {
         GSPLine *line = (GSPLine *) fetchedObjects[(NSUInteger) indexPath.row];
         if (![line.active boolValue]) {
-            [cell setBackgroundColor:kCustomColorLightGray];
+            [cell setBackgroundColor:UIColor.lightGrayColor];
         } else {
             [cell setBackgroundColor:[UIColor whiteColor]];
         }
@@ -182,7 +178,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 - (NSFetchRequest *)fetchRequest {
     NSFetchRequest *fetchRequest = nil;
     if (displayMode == DisplayMode_Lines) {
-        fetchRequest = self.fetchRequestLines;
+        fetchRequest = self.searchFetchRequestLines;
     } else if (displayMode == DisplayMode_Stops) {
         fetchRequest = self.searchFetchRequestStops;
     }
@@ -199,7 +195,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 
     NSMutableArray *predicates = [NSMutableArray array];
     [predicates addObject:[NSPredicate predicateWithFormat:@"active = %@", @YES]];
-    if (searchString.length) {
+    if (searchString.length > 0) {
         [predicates addObject:[NSPredicate predicateWithFormat:@"name beginsWith[cd] %@", searchString]];
     }
     fetchRequest.predicate = [NSCompoundPredicate andPredicateWithSubpredicates:[predicates copy]];
@@ -221,7 +217,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 
     NSMutableArray *predicates = [NSMutableArray array];
     [predicates addObject:[NSPredicate predicateWithFormat:@"active = %@", @YES]];
-    if (searchString.length) {
+    if (searchString.length > 0) {
         [predicates addObject:[NSPredicate predicateWithFormat:@"code beginsWith[cd] %@", searchString]];
     }
     fetchRequest.predicate = [NSCompoundPredicate andPredicateWithSubpredicates:[predicates copy]];
@@ -231,14 +227,6 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     [fetchRequest setSortDescriptors:sortDescriptors];
 
     return fetchRequest;
-}
-
-- (NSFetchRequest *)fetchRequestLines {
-    return [self newFetchRequestWithLineSearch:nil];
-}
-
-- (NSFetchRequest *)fetchRequestStops {
-    return [self newFetchRequestWithStopSearch:nil];
 }
 
 - (NSFetchRequest *)searchFetchRequestLines {
@@ -267,19 +255,6 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 #pragma mark - UISearchResultsUpdating methods
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
-    NSString *searchString = searchController.searchBar.text;
-
-    if (displayMode == DisplayMode_Lines) {
-        NSPredicate *predicate = [searchString length] > 0 ? [NSPredicate predicateWithFormat:@"name beginsWith[cd] %@ AND active = %@", searchString, @YES] : [NSPredicate predicateWithFormat:@"active = %@", @YES];
-        [self.searchFetchRequestLines setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(localizedStandardCompare:)], [NSSortDescriptor sortDescriptorWithKey:@"direction" ascending:YES selector:@selector(localizedStandardCompare:)]]];
-        [self.searchFetchRequestLines setPredicate:predicate];
-    }
-    else {
-        NSPredicate *predicate = [searchString length] > 0 ? [NSPredicate predicateWithFormat:@"code beginsWith[cd] %@ AND active = %@", searchString, @YES] : [NSPredicate predicateWithFormat:@"active = %@", @YES];
-        [self.searchFetchRequestStops setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"code" ascending:YES selector:@selector(localizedStandardCompare:)]]];
-        [self.searchFetchRequestStops setPredicate:predicate];
-    }
-
     [self performFetch];
 }
 

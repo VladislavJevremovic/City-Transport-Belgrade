@@ -33,14 +33,14 @@
                         </constraints>
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iln-fv-oKg">
-                        <rect key="frame" x="15" y="6" width="44" height="44"/>
+                        <rect key="frame" x="20" y="6" width="44" height="44"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="44" id="BZU-lW-DIk"/>
                             <constraint firstAttribute="height" constant="44" id="tbv-zf-oAc"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="198" translatesAutoresizingMaskIntoConstraints="NO" id="33o-IK-aUc">
-                        <rect key="frame" x="74" y="6" width="292" height="44"/>
+                        <rect key="frame" x="79" y="6" width="287" height="44"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -67,7 +67,7 @@
                     <constraint firstItem="Iln-fv-oKg" firstAttribute="centerY" secondItem="33o-IK-aUc" secondAttribute="centerY" id="He9-pz-Ahk"/>
                     <constraint firstItem="Iln-fv-oKg" firstAttribute="top" secondItem="CO7-eP-lUh" secondAttribute="top" constant="6" id="Kdc-U1-1ZV"/>
                     <constraint firstAttribute="bottom" secondItem="M5h-Wf-I7R" secondAttribute="bottom" id="TaQ-aj-KWO"/>
-                    <constraint firstItem="Iln-fv-oKg" firstAttribute="leading" secondItem="CO7-eP-lUh" secondAttribute="leading" constant="15" id="YQB-Np-7JY"/>
+                    <constraint firstItem="Iln-fv-oKg" firstAttribute="leading" secondItem="CO7-eP-lUh" secondAttribute="leading" constant="20" id="YQB-Np-7JY"/>
                     <constraint firstAttribute="trailing" secondItem="h2V-r1-XZh" secondAttribute="trailing" constant="10" id="Zps-Hp-01m"/>
                     <constraint firstItem="h2V-r1-XZh" firstAttribute="centerY" secondItem="Iln-fv-oKg" secondAttribute="centerY" id="bFO-B4-mjy"/>
                     <constraint firstAttribute="trailing" secondItem="M5h-Wf-I7R" secondAttribute="trailing" id="dir-4O-YhU"/>

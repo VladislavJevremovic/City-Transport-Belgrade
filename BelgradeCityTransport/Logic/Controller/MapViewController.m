@@ -27,6 +27,7 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
 }
 
 @property(nonatomic, weak) IBOutlet UIButton *buttonLocateMe;
+@property(nonatomic, weak) IBOutlet UILabel *infoLabel;
 @property(nonatomic, weak) IBOutlet MKMapView *mapView;
 @property(nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 
@@ -149,22 +150,21 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
         return;
     }
 
-//    UIColor *whisperBackgroundColor = nil;
-//    if (isError) {
-//        whisperBackgroundColor = [UIColor colorWithRed:1.0f green:59.0f / 255.0f blue:48.0f / 255.0f alpha:0.7f];
-//    } else {
-//        whisperBackgroundColor = [UIColor colorWithRed:0.0f green:122.0f / 255.0f blue:1.0f alpha:0.7f];
-//    }
+    UIColor *infoBackgroundColor = nil;
+    if (isError) {
+        infoBackgroundColor = [UIColor colorWithRed:1.0f green:59.0f / 255.0f blue:48.0f / 255.0f alpha:0.7f];
+    } else {
+        infoBackgroundColor = [UIColor colorWithRed:0.0f green:122.0f / 255.0f blue:1.0f alpha:0.7f];
+    }
 
-//    [WhisperBridge whisper:text
-//                 textColor:[UIColor whiteColor]
-//           backgroundColor:whisperBackgroundColor
-//    toNavigationController:self.navigationController];
+    self.infoLabel.hidden = false;
+    self.infoLabel.textColor = UIColor.whiteColor;
+    self.infoLabel.backgroundColor = infoBackgroundColor;
+    self.infoLabel.text = text;
 }
 
 - (void)hideInfoLabel {
-//    [WhisperBridge silent:self.navigationController
-//             silenceAfter:kDropDownHideTime];
+    self.infoLabel.hidden = true;
 }
 
 - (IBAction)tappedLocateMe:(id)sender {
@@ -265,36 +265,19 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
     }
 }
 
-//- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
-//    MKAnnotationView *annotationView;
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    NSString *identifier = @"Annotation";
+    MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+    if (annotationView == nil) {
+        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        annotationView.canShowCallout = true;
+        annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    } else {
+        annotationView.annotation = annotation;
+    }
 
-//    if ([annotation isKindOfClass:CCHMapClusterAnnotation.class]) {
-//        static NSString *identifier = @"clusterAnnotation";
-//
-//        ClusterAnnotationView *clusterAnnotationView = (ClusterAnnotationView *) [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
-//        if (clusterAnnotationView) {
-//            clusterAnnotationView.annotation = annotation;
-//        } else {
-//            clusterAnnotationView = [[ClusterAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
-//            clusterAnnotationView.canShowCallout = YES;
-//        }
-//
-//        CCHMapClusterAnnotation *clusterAnnotation = (CCHMapClusterAnnotation *) annotation;
-//        clusterAnnotationView.count = clusterAnnotation.annotations.count;
-//        clusterAnnotationView.blue = false;
-//        clusterAnnotationView.uniqueLocation = clusterAnnotation.isUniqueLocation;
-//        if (clusterAnnotationView.uniqueLocation) {
-//            if (clusterAnnotationView.rightCalloutAccessoryView == nil)
-//                clusterAnnotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-//        } else {
-//            clusterAnnotationView.rightCalloutAccessoryView = nil;
-//        }
-//
-//        annotationView = clusterAnnotationView;
-//    }
-//
-//    return annotationView;
-//}
+    return annotationView;
+}
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
     LocationAnnotation *annotation = (LocationAnnotation *)view.annotation;
@@ -319,42 +302,11 @@ int const kBatchCount = 10000; // 500 or stmh like that causes CF crash
 }
 
 - (void)mapView:(MKMapView *)mapView didFailToLocateUserWithError:(NSError *)error {
-    //
+    // ...
 }
 
-#pragma mark - CCHMapClusterControllerDelegate
-
 //- (NSString *)mapClusterController:(CCHMapClusterController *)mapClusterController titleForMapClusterAnnotation:(CCHMapClusterAnnotation *)mapClusterAnnotation {
-//    NSUInteger numAnnotations = mapClusterAnnotation.annotations.count;
-//    if (numAnnotations == 1) {
-//        LocationAnnotation *annotation = (LocationAnnotation *) mapClusterAnnotation.annotations.anyObject;
-//        return annotation.title;
-//    } else {
-//        return [NSString stringWithFormat:NSLocalizedString(@"clusterAnnotationStopsFormatText", nil), numAnnotations];
-//    }
-//}
-//
-//- (NSString *)mapClusterController:(CCHMapClusterController *)mapClusterController subtitleForMapClusterAnnotation:(CCHMapClusterAnnotation *)mapClusterAnnotation {
-//    NSUInteger numAnnotations = mapClusterAnnotation.annotations.count;
-//    if (numAnnotations == 1) {
-//        LocationAnnotation *annotation = (LocationAnnotation *) mapClusterAnnotation.annotations.anyObject;
-//        return annotation.subtitle;
-//    } else {
-//        return nil;
-//    }
-//}
-//
-//- (void)mapClusterController:(CCHMapClusterController *)mapClusterController willReuseMapClusterAnnotation:(CCHMapClusterAnnotation *)mapClusterAnnotation {
-//    ClusterAnnotationView *clusterAnnotationView = (ClusterAnnotationView *) [self.mapView viewForAnnotation:mapClusterAnnotation];
-//    clusterAnnotationView.count = mapClusterAnnotation.annotations.count;
-//    clusterAnnotationView.uniqueLocation = mapClusterAnnotation.isUniqueLocation;
-//    clusterAnnotationView.blue = false;
-//    if (clusterAnnotationView.count == 1) {
-//        if (clusterAnnotationView.rightCalloutAccessoryView == nil)
-//            clusterAnnotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-//    } else {
-//        clusterAnnotationView.rightCalloutAccessoryView = nil;
-//    }
+//    return [NSString stringWithFormat:NSLocalizedString(@"clusterAnnotationStopsFormatText", nil), numAnnotations];
 //}
 
 @end

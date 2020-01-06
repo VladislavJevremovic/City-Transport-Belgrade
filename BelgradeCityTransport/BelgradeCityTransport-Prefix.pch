@@ -6,10 +6,6 @@
 
 #import <Availability.h>
 
-#ifndef __IPHONE_5_0
-#warning "This project uses features only available in iOS SDK 5.0 and later."
-#endif
-
 #ifdef __OBJC__
 
 #import <UIKit/UIKit.h>
@@ -18,16 +14,8 @@
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
-#define SharedAppDelegate   ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 #define CLOSED_TOP_OFFSET   160.0f
 #define OPEN_BOTTOM_OFFSET  56.0f
 #define OPEN_DRAG_OFFSET    44.0f
-
-#define kCustomColorLightGray [UIColor colorWithRed:220.0f/255.0f green:220.0f/255.0f blue:220.0f/255.0f alpha:1.0f]
-
-extern double const kZoomLevel;
-
-#define TICK NSDate *startTime = [NSDate date];
-#define TOCK NSLog(@"Elapsed Time: %f", -[startTime timeIntervalSinceNow]);
 
 #endif
