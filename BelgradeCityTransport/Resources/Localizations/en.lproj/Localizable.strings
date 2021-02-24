@@ -30,7 +30,7 @@
 "searchStopsPlaceholderText" = "Enter stop number";
 "searchLinesPlaceholderText" = "Enter line number";
 "infoUSSD" = "*011*";
-"infoUSSDText" = "Type/paste the given code into Phone app to acquire the distance of incoming vehicles.\n(Apps must not dial USSD codes on their own.)\n\nData is provided and charged (1.8 RSD) by an external system to which the author of this app is by no means affiliated.";
+"infoUSSDText" = "Type/paste the given code into Phone app to acquire the distance of incoming vehicles.\n(Apps must not dial USSD codes on their own.)\n\nData is provided and charged (2.3 RSD + VAT) by an external system to which the author of this app is by no means affiliated.";
 "clusterAnnotationStopsFormatText" = "Number of stops: %tu";
 
 // Info
